@@ -1,10 +1,83 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 04.01.2021, 17:38:01
-    Author     : Дмитрий
-*/
-
+.header {
+  font-size: 14px;
+  border-width: 0px;
+  border-radius: 0px;
+}
+.header .header-btn {
+  font-size: 14px;
+  background-color: #79A62F;
+  color: white;
+  width: 140px;
+}
+.header .header-btn:hover {
+  background-color: #85B634;
+  color: #F2F2F2;
+}
+.header .navbar-toggle {
+  border-color: white;
+}
+.header .dropdown-menu {
+  background-color: #D2E8F2;
+}
+.header .navbar-nav > li > a {
+  color: #D2E8F2;
+  background-color: #46718C;
+}
+.header .navbar-nav > li > a:hover,
+.header .navbar-nav > li > a:focus {
+  color: white;
+  background-color: #46718C;
+}
+.header .navbar-nav > .active > a {
+  color: #D2E8F2;
+  background-color: #46718C;
+}
+.header .navbar-nav > .active > a:hover,
+.header .navbar-nav > .active > a:focus {
+  color: #D2E8F2;
+  background-color: #46718C;
+}
+@media (max-width: 991px) {
+  .header .header-btn {
+    font-size: 12px;
+    width: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    font-size: 12px;
+  }
+  .header .header-btn {
+    width: 170px;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    position: relative !important;
+  }
+}
+.my-btn1 {
+  background-color: #79A62F;
+  color: white;
+  width: 240px;
+  height: 100%;
+  font-size: 14px;
+  border-radius: 6px;
+}
+.my-btn1:hover {
+  background-color: #85B634;
+  color: white;
+}
+.header-top {
+  background-color: white;
+}
+.header-bottom {
+  background-color: #46718C;
+  height: 100%;
+  border-bottom: 3px solid #D2E8F2;
+}
+.my-logo {
+  width: 120px;
+  height: auto;
+}
+/*# sourceMappingURL=header.css.map */

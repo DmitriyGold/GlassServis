@@ -12,8 +12,24 @@ $this->title = 'My Yii Application';
         <p class="lead">You have successfully created your Yii-powered application.</p>
 
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        
+      
     </div>
 
+    <div class="container">
+        <div class="blk1">Далеко-далеко за словесными горами в стране,
+            гласных и согласных живут рыбные тексты. Путь, взгляд, толку 
+            маленький взобравшись скатился пояс всеми выйти прямо обеспечивает 
+            переулка продолжил дороге осталось щеке! Запятой, правилами о буквенных.</div>
+        
+        <div class="blk2">Далеко-далеко за словесными горами в стране,
+            гласных и <strong>согласных</strong>  живут рыбные тексты. </div>
+        
+        <div class="blk3">Далеко-<strong>далеко</strong> за <strong><i>словесными</i></strong> горами .</div>
+        
+    </div>
+    
+    
     <div class="body-content">
 
         <div class="row">

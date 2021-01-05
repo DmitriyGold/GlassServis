@@ -1,0 +1,103 @@
+@font-size1: 18px;
+@font-size2: 14px;
+@font-size3: 12px;
+@color-1: #592405;
+@color-2: #46718C;
+@color-3: #D2E8F2;
+@color-4: #79A62F;
+@color-5: #85B634;
+
+.header {
+    font-size: @font-size2;
+    border-width: 0px;
+    border-radius: 0px; 
+    .header-btn {
+        font-size: @font-size2;   
+        background-color: @color-4;
+        color: white;
+        width: 140px;
+        &:hover {
+            background-color: @color-5; 
+            color: #F2F2F2;
+        }
+    }
+    .navbar-toggle {
+        border-color: white;
+    }
+    .dropdown-menu {
+        background-color: @color-3;
+    }
+
+    .navbar-nav  {
+        > li > a {
+            color: @color-3;
+            background-color: @color-2;
+            &:hover, &:focus {
+                color: white;
+                background-color: @color-2;
+            }
+        }
+        > .active > a {
+            color: @color-3;
+            background-color: @color-2;
+            &:hover, &:focus 
+                {
+                color: @color-3;
+                background-color: @color-2;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .header {
+        .header-btn {
+            font-size: @font-size3;   
+            width: 110px; 
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        font-size: @font-size3;
+        .header-btn {
+            width: 170px; 
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .header {
+        position: relative !important; 
+    }
+}
+
+.my-btn1 {
+    background-color: @color-4;
+    color: white;
+    width: 240px;
+    height: 100%;
+    font-size: @font-size2; 
+    border-radius: 6px;
+    &:hover {
+        background-color: @color-5;
+        color: white;
+    }
+}
+
+.header-top {
+    background-color: white; 
+}
+
+.header-bottom {
+    background-color: @color-2;
+    height: 100%;
+    border-bottom: 3px solid @color-3;
+}    
+
+.my-logo {
+    width: 120px;
+    height: auto;
+}
