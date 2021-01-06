@@ -17,12 +17,9 @@ AppAsset::register($this);
 <html lang="<?= Yii::$app->language ?>">
     <head>
         <meta charset="<?= Yii::$app->charset ?>">
-
         <meta name="keywords" content="закаленное стекло москва, пожаростойкое стекло москва, ударопрочное стекло">
         <meta name="author" content="Золотов Дмитрий Сергеевич">
         <meta name="description" content="Гласс сервис">
-
-
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?php $this->registerCsrfMetaTags() ?>
@@ -48,16 +45,16 @@ AppAsset::register($this);
 
             <div class="header container-fluid">
 
-                <div class="row header-top align-items-center pb-2 pb-md-0 text-center">
-                    <div class="col-12 col-md-2  text-md-right">XXXXXX@mail.ru</div>
-                    <div class="col-12 col-md-7 text-center text-md-right border-right border-secondary block-phone">
+                <div class="row header-top align-items-center py-2 text-center">
+                    <div class="col-12 col-md-2 text-md-right pb-2 pb-md-0">XXXXXX@mail.ru</div>
+                    <div class="col-12 col-md-7 text-center text-md-right border-right border-secondary block-phone pb-2 pb-md-0">
                         +7 964-123-4567, +7 (495) 123-45-67
                     </div>
                     <div class="col-12 col-md-3  text-md-left">вход/регистрация</div>
                 </div>
 
                 <div class="row header-bottom align-items-center pb-2">
-                    <nav class="navbar col-12 col-lg-10 navbar-expand-lg navbar-light px-4  justify-content-end">
+                    <nav class="navbar col-12 col-lg-10 navbar-expand-lg navbar-light px-4 justify-content-end">
                         <div class="navbar-brand m-0 col-12 col-lg-2 text-center text-lg-left">логотип. 
                             <strong>Гласс Сервис</strong>
                         </div>
@@ -68,11 +65,11 @@ AppAsset::register($this);
 
                         <div class="collapse navbar-collapse justify-content-end col-12 col-lg-10" id="navbarToggler1">
                             <div class="navbar-nav text-center text-lg-right">
-                                <a class="nav-link active" href="#">Главная</a>
-                                <a class="nav-link" href="#">О компании</a>
-                                <div>
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                        Продукция</a>
+                                <a class="nav-item nav-link active" href="#">Главная</a>
+                                <a class="nav-item nav-link" href="#">О компании</a>
+                                <div class="dropdown">                                    
+                                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
+                                       aria-haspopup="true" aria-expanded="false">Продукция</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="#">Закаленное стекло</a>
                                         <a class="dropdown-item" href="#">Пожаростойкое стекло</a>
@@ -81,9 +78,9 @@ AppAsset::register($this);
                                         <a class="dropdown-item" href="#">xxxxxxxxxxx</a>
                                     </div>
                                 </div>
-
-                                <div>
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                                <div class="dropdown">                                    
+                                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
+                                       aria-haspopup="true" aria-expanded="false">Услуги</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="#">Закалка</a>
                                         <a class="dropdown-item" href="#">Резка в размер</a>
@@ -92,9 +89,8 @@ AppAsset::register($this);
                                         <a class="dropdown-item" href="#">Фацет</a>
                                     </div>
                                 </div>
-
-                                <a class="nav-link" href="#">Вакансии</a>
-                                <a class="nav-link" href="#">Контакты</a>
+                                <a class="nav-item nav-link" href="#">Вакансии</a>
+                                <a class="nav-item nav-link" href="#">Контакты</a>
                             </div>
                         </div>
                     </nav>
@@ -107,7 +103,6 @@ AppAsset::register($this);
                         </a> 
                     </div>
                 </div>
-
             </div>
 
             <div class="container">
