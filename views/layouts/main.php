@@ -116,11 +116,21 @@ AppAsset::register($this);
             </div>
         </div>
 
+        
         <footer class="footer">
-            <div class="container">
-                <p class="pull-left">&copy; Гласс Сервис <?= date('Y') ?></p>
-
-                <p class="pull-right"><?= Yii::powered() ?></p>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-12 col-md-3 footer-border">
+                        <p class="pull-left">&copy;
+                            <?= date('Y') ?>. Логотип. Гласс Сервис. <br> Все права защищены.</p>   
+                    </div>
+                    <div class="col-12 col-md-4 footer-border">
+                        <p class="pull-center">меню</p>   
+                    </div>
+                    <div class="col-12 col-md-5 footer-border">
+                        <p class="pull-right">форма обратной связи</p>   
+                    </div>
+                </div>
             </div>
         </footer>
 
