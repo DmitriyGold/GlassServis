@@ -2,21 +2,24 @@
 @font-size2: 18px;
 @font-size3: 24px;
 @font-size4: 96px;
-@color-1: #1A252B; // фон футера
-@color-2: #00BCB2; // зеленый текст
-@color-3: #F8F9FA; // серый текст
+@color-1: #CCCCCC; // серый
+@color-2: #00BCB2; // морская волна 
+@color-3: #36758C; // синий текст иконок
+@color-4: #1A252B; // фон футера
 
 @font1-family: 'Montserrat', sans-serif;
 @font2-family: 'Raleway', sans-serif;
 
+@footer-height: 250px;
+
 .footer {
     font-size:  @font-size2;
     font-family: @font2-family;
-    background-color: @color-1;
-    color: @color-3;
-    min-height: 150px; 
+    background-color: @color-4;
+    color: @color-1;
+    min-height: @footer-height; 
     border-width: 0px;
-    border-radius: 0px;  
+    border-radius: 0px; 
     .footer-top {
         .block-phone {
             font-family: @font1-family;
@@ -25,7 +28,7 @@
     }
     .footer-bottom {
         min-height: 90px;   
-        border-bottom: 3px solid @color-1;
+        border-bottom: 3px solid @color-4;
         .nav-link {
             font-weight: 600; /* Жирное начертание */
             padding-left: 8px;
@@ -38,7 +41,62 @@
             }
         }
     } 
-    .footer-border {
+    .block1 {
         border: 1px solid #ccc;
+    } 
+    .block2 {
+        border: 1px solid red;
+    }
+    .block3 {
+        border: 1px solid #ccc;
+    }
+    .address {
+        font-size:  @font-size1; 
+    }
+
+    .copywriter {
+        font-size:  @font-size1; 
+    }
+    .icon {
+        max-width: 40px;
+    }
+    .block-phone {
+        font-family: @font1-family;
+        font-size:  @font-size3;
+    }
+    .footer-btn {
+        font-size: @font-size1;  
+        font-stretch: expanded; // широкий текст
+        background-color: @color-2;
+        color: white;
+        width: 150px;
+        border-radius: 0 20px 0 20px;
+        border: 2px solid @color-4;
+        &:hover {
+            background-color: #FFFFFF; 
+            border: 2px solid @color-2;
+            color: #000;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .footer {
+        font-size:  @font-size1;
+            .block-phone {
+                font-size:  @font-size2;
+            }
+            .nav-link {
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+            .nav-link {
+                font-size:  @font-size2;
+            }
     }
 }

@@ -36,6 +36,7 @@ AppAsset::register($this);
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&display=swap" 
               rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
     <body>
@@ -55,44 +56,17 @@ AppAsset::register($this);
 
                 <div class="row header-bottom align-items-center pb-2">
                     <nav class="navbar col-12 col-lg-10 navbar-expand-lg navbar-light px-4 justify-content-end">
-                        <div class="navbar-brand m-0 col-12 col-lg-2 text-center text-lg-left">логотип. 
-                            <strong>Гласс Сервис</strong>
+                        <div class="navbar-brand m-0 col-12 col-lg-2 text-center text-lg-left">
+                            <a href="<?= Url::to(['#']); ?>">
+                                <img class="logo p-0 m-0" src="<?= Url::to('@web/logo/лого-06.svg') ?>" alt="Логотип">
+                                <strong>Гласс Сервис</strong>
+                            </a>
                         </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler1"
-                                aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse justify-content-end col-12 col-lg-10" id="navbarToggler1">
-                            <div class="navbar-nav text-center text-lg-right">
-                                <a class="nav-item nav-link active" href="#">Главная</a>
-                                <a class="nav-item nav-link" href="#">О компании</a>
-                                <div class="dropdown">                                    
-                                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
-                                       aria-haspopup="true" aria-expanded="false">Продукция</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Закаленное стекло</a>
-                                        <a class="dropdown-item" href="#">Пожаростойкое стекло</a>
-                                        <a class="dropdown-item" href="#">xxxxxxxxxxxxx</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">xxxxxxxxxxx</a>
-                                    </div>
-                                </div>
-                                <div class="dropdown">                                    
-                                    <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
-                                       aria-haspopup="true" aria-expanded="false">Услуги</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Закалка</a>
-                                        <a class="dropdown-item" href="#">Резка в размер</a>
-                                        <a class="dropdown-item" href="#">Полировка</a>
-                                        <a class="dropdown-item" href="#">Шлифовка</a>
-                                        <a class="dropdown-item" href="#">Фацет</a>
-                                    </div>
-                                </div>
-                                <a class="nav-item nav-link" href="#">Вакансии</a>
-                                <a class="nav-item nav-link" href="#">Контакты</a>
-                            </div>
-                        </div>
+                        <?php
+                        $model1 = 'end';
+                        $model2 = 10;
+                        echo $this->render('nav', compact('model1','model2'));
+                        ?>
                     </nav>
 
                     <div class="col-12 col-lg-2 text-center">
@@ -116,20 +90,70 @@ AppAsset::register($this);
             </div>
         </div>
 
-        
+
         <footer class="footer">
             <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-12 col-md-3 footer-border">
-                        <p class="pull-left">&copy;
-                            <?= date('Y') ?>. Логотип. Гласс Сервис. <br> Все права защищены.</p>   
+                <div class="row p-2 text-center">
+
+                    <div class="col-12 col-lg-4 border-right">
+                        <div class="navbar-brand py-4">
+                            <a href="<?= Url::to(['#']); ?>">
+                                <img class="logo p-0 m-0" src="<?= Url::to('@web/logo/лого-06.svg') ?>" alt="Логотип">
+                                <strong>Гласс Сервис</strong>
+                            </a>
+                        </div>
+                        <div class="address py-4">Адрес: Москва ... </div>
+                        <div class="copywriter">
+                            <p>&copy;<?= date('Y') ?>. Все права защищены.</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-4 footer-border">
-                        <p class="pull-center">меню</p>   
+
+                    <div class="col-12 col-lg-8">
+                        <div class="row flex-column">
+                            <div class="col py-2 text-center d-none d-md-block">
+                                <nav class="navbar navbar-expand-md navbar-inverse">
+                                    <?php
+                                    $model1 = 'center';
+                                    $model2 = 12;
+                                    echo $this->render('nav', compact('model1','model2'));
+                                    ?>
+                                </nav>
+                            </div>
+                            <div class="colpy-2">
+                                <div class="row">
+                                    <div class="col col-lg-8 block-phone">
+                                        +7 964-123-4567, +7 (495) 123-45-67
+                                    </div>
+                                    <div class="col col-lg-4">
+                                        <a href="<?= Url::to(['/site/xxx']); ?>">
+                                            <button type="button" class="btn footer-btn mb-1">
+                                                <i class="fa fa-phone" aria-hidden="true" style="color: #fff;"></i> 
+                                                заказать звонок</button>
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col pt-5 pb-2">
+                                <a href="<?= Url::to(['#']); ?>">
+                                    <img class="icon" src="<?= Url::to('@web/icon/Facebook.png') ?>" alt="Логотип">
+                                </a>
+                                <a href="<?= Url::to(['#']); ?>">
+                                    <img class="icon" src="<?= Url::to('@web/icon/Instagram.png') ?>" alt="Логотип">
+                                </a>
+                                <a href="<?= Url::to(['#']); ?>">
+                                    <img class="icon" src="<?= Url::to('@web/icon/Odnoklassniki.png') ?>" alt="Логотип">
+                                </a>
+                                <a href="<?= Url::to(['#']); ?>">
+                                    <img class="icon" src="<?= Url::to('@web/icon/Twitter.png') ?>" alt="Логотип">
+                                </a>
+                                <a href="<?= Url::to(['#']); ?>">
+                                    <img class="icon" src="<?= Url::to('@web/icon/VK.png') ?>" alt="Логотип">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-5 footer-border">
-                        <p class="pull-right">форма обратной связи</p>   
-                    </div>
+
                 </div>
             </div>
         </footer>

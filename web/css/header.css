@@ -5,7 +5,7 @@
   border-radius: 0px;
 }
 .header .header-top {
-  background-color: #F8F9FA;
+  background-color: #CCCCCC;
   min-height: 45px;
 }
 .header .header-top .block-phone {
@@ -14,7 +14,7 @@
 }
 .header .header-bottom {
   min-height: 90px;
-  border-bottom: 3px solid #F8F9FA;
+  border-bottom: 3px solid #CCCCCC;
 }
 .header .header-bottom .nav-link {
   font-weight: 600;
@@ -31,7 +31,7 @@
   font-stretch: expanded;
   background-color: #00BCB2;
   color: white;
-  width: 140px;
+  width: 150px;
   border-radius: 0 20px 0 20px;
 }
 .header .header-bottom .header-btn:hover {
@@ -59,23 +59,7 @@
     font-size: 18px;
   }
   .header .header-bottom .header-btn {
-    width: 140px;
+    width: 150px;
   }
-}
-.my-btn1 {
-  /* background-color: @color-4;
-     color: white;
-     width: 240px;
-     height: 100%;
-     font-size: @font-size2; 
-     border-radius: 6px;
-     &:hover {
-         background-color: @color-5;
-         color: white;
-     }*/
-}
-.my-logo {
-  max-width: 120px;
-  height: auto;
 }
 /*# sourceMappingURL=header.css.map */

@@ -1,24 +1,14 @@
-@font-size1: 48px;
-@font-size2: 24px;
-@font-size3: 18px;
+@font-size1: 14px;
+@font-size2: 18px;
+@font-size3: 24px;
+@font-size4: 96px;
+@color-1: #CCCCCC; // серый
+@color-2: #00BCB2; // морская волна 
+@color-3: #36758C; // синий текст иконок
+@color-4: #1A252B; // фон футера
+
 @font1-family: 'Montserrat', sans-serif;
 @font2-family: 'Raleway', sans-serif;
-@color-1: #00BCB2;
-@color-2: #36758C;
-@color-3: #20538A;
-@color-4: #303C48;
-@color-5: #26AEC6;
-@color-6: #E40046;
-
-
-/*
-2482C2 // синий логотип
-90C404 // зеленый кнопка
-F5F6F7 // серый вверх
-@color-6: #1A252B; // футор
-ACC655 // зеленая надпись в футоре
-FFF1C8 // белая надпись в футоре
-*/
 
 html,
 body {
@@ -36,28 +26,17 @@ body {
     padding: 70px 15px 20px;
 }
 
-.blk1 {
-    font-family: @font2-famaly;
-    font-size: 18px;
-}
-.blk2 {
-    font-family: @font2-famaly;
-    font-size: 36px;
-}
-.blk3 {
-    font-family: @font2-family;
-    font-size: 96px;
-}
-
-
-.jumbotron {
-    text-align: center;
-    background-color: transparent;
-}
-
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+// логотип
+.navbar-brand {
+    color: @color-2;
+    font-size:  @font-size3;
+    .logo {
+        max-width: 80px;
+        height: auto;
+    }
+    a {
+        text-decoration: none!important; /* Отменяем подчеркивание у ссылки */
+    }    
 }
 
 .not-set {
