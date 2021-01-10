@@ -1,20 +1,28 @@
 .header {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Raleway', sans-serif;
   border-width: 0px;
   border-radius: 0px;
 }
 .header .header-top {
-  background-color: #CCCCCC;
-  min-height: 45px;
+  background-color: #ABCFF1;
+  color: #000;
+  height: 45px;
+  opacity: 0.7;
+  /* Значение прозрачности */
+  filter: alpha(opacity=70);
+  /* Прозрачность в IE */
 }
 .header .header-top .block-phone {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
 }
 .header .header-bottom {
-  min-height: 90px;
-  border-bottom: 3px solid #CCCCCC;
+  height: 90px;
+  background-color: transparent;
+  text-shadow: 1px 1px 1px white, 0 0 1px white;
+  /* Параметры тени */
+  z-index: 2;
 }
 .header .header-bottom .nav-link {
   font-weight: 600;
@@ -39,12 +47,31 @@
   border: 2px solid #00BCB2;
   color: #000;
 }
+.header .header-content {
+  margin-top: -430px;
+  padding-left: 80px;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
+  text-shadow: 1px 1px 2px black, 0 0 1em #36758C;
+  /* Параметры тени */
+  height: 430px;
+}
+.header .header-content .cont-top {
+  font-size: 64px;
+}
+.header .header-content .cont-center {
+  font-size: 40px;
+}
+.header .header-content .cont-bottom {
+  font-size: 24px;
+}
 @media (max-width: 1199px) {
   .header {
     font-size: 14px;
   }
   .header .header-top .block-phone {
-    font-size: 18px;
+    font-size: 20px;
   }
   .header .header-bottom .nav-link {
     padding-left: 6px;
@@ -53,13 +80,47 @@
   .header .header-bottom .header-btn {
     width: 100px;
   }
+  .header .header-content .cont-top {
+    font-size: 40px;
+  }
+  .header .header-content .cont-center {
+    font-size: 24px;
+  }
+  .header .header-content .cont-bottom {
+    font-size: 20px;
+  }
 }
 @media (max-width: 991px) {
   .header .header-bottom .nav-link {
-    font-size: 18px;
+    font-size: 20px;
   }
   .header .header-bottom .header-btn {
     width: 150px;
+  }
+  .header .header-content {
+    margin-top: -330px;
+    height: 330px;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .header .header-top {
+    height: 135px;
+  }
+  .header .header-bottom .nav-link {
+    font-size: 20px;
+  }
+  .header .header-bottom .header-btn {
+    width: 150px;
+  }
+  .header .header-content .cont-top {
+    font-size: 24px;
+  }
+  .header .header-content .cont-center {
+    font-size: 20px;
+  }
+  .header .header-content .cont-bottom {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=header.css.map */

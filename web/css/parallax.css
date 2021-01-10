@@ -1,16 +1,28 @@
 .parallax_block76 {
-  min-height: 570px;
+  min-height: 895px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
+  margin-top: -90px;
 }
 .parallax1 {
-  background-image: url("../images/parallax.jpg");
-  min-height: 570px;
+  background-image: url("../images/index/pict1.jpg");
+  min-height: 895px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
+  margin-top: -90px;
+}
+@media (max-width: 767px) {
+  .parallax_block76 {
+    min-height: 800px;
+  }
+  .parallax1 {
+    min-height: 800px;
+  }
 }
 /*# sourceMappingURL=parallax.css.map */

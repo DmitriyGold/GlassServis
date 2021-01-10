@@ -30,11 +30,9 @@ AppAsset::register($this);
               <?php $this->head() ?>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&display=swap"              
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" 
               rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&display=swap" 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
               rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -43,9 +41,7 @@ AppAsset::register($this);
         <?php $this->beginBody() ?>
 
         <div class="wrap">
-
             <div class="header container-fluid">
-
                 <div class="row header-top align-items-center py-2 text-center">
                     <div class="col-12 col-md-2 text-md-right pb-2 pb-md-0">XXXXXX@mail.ru</div>
                     <div class="col-12 col-md-7 text-center text-md-right border-right border-secondary block-phone pb-2 pb-md-0">
@@ -58,34 +54,46 @@ AppAsset::register($this);
                     <nav class="navbar col-12 col-lg-10 navbar-expand-lg navbar-light px-4 justify-content-end">
                         <div class="navbar-brand m-0 col-12 col-lg-2 text-center text-lg-left">
                             <a href="<?= Url::to(['#']); ?>">
-                                <img class="logo p-0 m-0" src="<?= Url::to('@web/logo/лого-06.svg') ?>" alt="Логотип">
+                                <img class="logo p-0 m-0" src="<?= Url::to('@web/logo/лого-07.svg') ?>" alt="Логотип">
                                 <strong>Гласс Сервис</strong>
                             </a>
                         </div>
                         <?php
                         $model1 = 'end';
                         $model2 = 10;
-                        echo $this->render('nav', compact('model1','model2'));
+                        echo $this->render('nav', compact('model1', 'model2'));
                         ?>
                     </nav>
 
                     <div class="col-12 col-lg-2 text-center">
                         <a href="<?= Url::to(['/site/xxx']); ?>">
                             <button type="button" class="btn header-btn mb-1">
-                                <i class="fa fa-phone" aria-hidden="true" style="color: #fff;"></i> 
+                                <i class="fa fa-phone" aria-hidden="true" style="color: #ccc;"></i> 
                                 заказать звонок</button>
                         </a> 
                     </div>
+                </div>            
+
+                <div  class="parallax1"></div>                 
+                
+                <div class="header-content">
+                        <div class="row">
+                            <div class="cont-top col-12"><strong>Промышленная переработка <br>листового стекла в Москве.</strong></div>
+                            <div class="cont-center col-12">Новое предприятие с современным оборудованием.</div> 
+                            <div class="cont-bottom col-12">Закаленное, пожаростойкое стекло.</div> 
+                        </div>
                 </div>
+
             </div>
 
-            <div class="container">
+            <div class="container-fluid">
                 <?=
                 Breadcrumbs::widget([
                     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                 ])
                 ?>
                 <?= Alert::widget() ?>
+
                 <?= $content ?>
             </div>
         </div>
@@ -115,7 +123,7 @@ AppAsset::register($this);
                                     <?php
                                     $model1 = 'center';
                                     $model2 = 12;
-                                    echo $this->render('nav', compact('model1','model2'));
+                                    echo $this->render('nav', compact('model1', 'model2'));
                                     ?>
                                 </nav>
                             </div>
@@ -127,7 +135,7 @@ AppAsset::register($this);
                                     <div class="col col-lg-4">
                                         <a href="<?= Url::to(['/site/xxx']); ?>">
                                             <button type="button" class="btn footer-btn mb-1">
-                                                <i class="fa fa-phone" aria-hidden="true" style="color: #fff;"></i> 
+                                                <i class="fa fa-phone" aria-hidden="true" style="color: #ccc;"></i> 
                                                 заказать звонок</button>
                                         </a> 
                                     </div>

@@ -1,5 +1,5 @@
 .footer {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Raleway', sans-serif;
   background-color: #1A252B;
   color: #CCCCCC;
@@ -66,7 +66,7 @@
     font-size: 14px;
   }
   .footer .block-phone {
-    font-size: 18px;
+    font-size: 20px;
   }
   .footer .nav-link {
     padding-left: 6px;
@@ -75,7 +75,7 @@
 }
 @media (max-width: 991px) {
   .footer .nav-link {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=footer.css.map */

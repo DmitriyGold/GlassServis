@@ -1,7 +1,9 @@
 @font-size1: 14px;
-@font-size2: 18px;
+@font-size2: 20px;
 @font-size3: 24px;
-@font-size4: 96px;
+@font-size4: 40px;
+@font-size5: 64px;
+
 @color-1: #CCCCCC; // серый
 @color-2: #00BCB2; // морская волна 
 @color-3: #36758C; // синий текст иконок
@@ -18,12 +20,11 @@ body {
 .wrap {
     min-height: 100%;
     height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
-}
+    margin: 0 auto 0px;
 
-.wrap > .container {
-    padding: 70px 15px 20px;
+    .container-fluid {
+        padding: 0px 0px;
+    }
 }
 
 // логотип
@@ -31,7 +32,16 @@ body {
     color: @color-2;
     font-size:  @font-size3;
     .logo {
+        margin-right: 0;
+        padding-right: 0;
         max-width: 80px;
+        height: auto;
+    }
+    .logo2 {
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 0;
+        max-width: 250px;
         height: auto;
     }
     a {
@@ -96,7 +106,26 @@ a.desc:after {
     border-left: 3px solid #eed3d7;
     padding: 10px 20px;
     margin: 0 0 15px 0;
+} 
+
+.site-index {
+    width: 100%;
+    height: auto;
+    .news {       
+    }
 }
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+}
+
 
 
 

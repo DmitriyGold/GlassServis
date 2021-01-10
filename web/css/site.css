@@ -5,18 +5,26 @@ body {
 .wrap {
   min-height: 100%;
   height: auto;
-  margin: 0 auto -60px;
-  padding: 0 0 60px;
+  margin: 0 auto 0px;
 }
-.wrap > .container {
-  padding: 70px 15px 20px;
+.wrap .container-fluid {
+  padding: 0px 0px;
 }
 .navbar-brand {
   color: #00BCB2;
   font-size: 24px;
 }
 .navbar-brand .logo {
+  margin-right: 0;
+  padding-right: 0;
   max-width: 80px;
+  height: auto;
+}
+.navbar-brand .logo2 {
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+  max-width: 250px;
   height: auto;
 }
 .navbar-brand a {
@@ -71,5 +79,9 @@ a.desc:after {
   border-left: 3px solid #eed3d7;
   padding: 10px 20px;
   margin: 0 0 15px 0;
+}
+.site-index {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=site.css.map */

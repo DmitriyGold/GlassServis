@@ -1,4 +1,6 @@
-@min-height-1: 570px; 
+@min-height-1: 895px; 
+@min-height-2: 800px; 
+@height-header-top: 45px;
 
 .parallax_block76 {
     min-height: @min-height-1; 
@@ -7,10 +9,32 @@
     background-position: center;  
     background-repeat: no-repeat;
     background-size: cover; 
+    z-index: -1;
+    margin-top: -@height-header-top * 2;
 }
 
 .parallax1 {
-    background-image: url("../images/parallax.jpg");
+    background-image: url("../images/index/pict1.jpg");
 
     .parallax_block76();
 }
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+    .parallax_block76 {
+        min-height: @min-height-2; 
+    }
+    .parallax1 {
+        .parallax_block76();
+    }
+}
+
+
+
+
+
