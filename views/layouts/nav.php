@@ -6,7 +6,17 @@
 <div class="collapse navbar-collapse justify-content-<?="$model1"?> col-12 col-lg-<?="$model2"?>" id="navbarToggler1">
     <div class="navbar-nav text-center text-lg-right">
         <a class="nav-item nav-link active" href="#">Главная</a>
-        <a class="nav-item nav-link" href="#">О компании</a>
+        
+                <div class="dropdown">                                    
+            <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
+               aria-haspopup="true" aria-expanded="false">О компании 
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Сотрудники</a>
+                <a class="dropdown-item" href="#">СЕРТИФИКАТЫ, ГОСТЫ, ТЕХУСЛОВИЯ</a>
+            </div>
+        </div>
+
         <div class="dropdown">                                    
             <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
                aria-haspopup="true" aria-expanded="false">Продукция 
@@ -14,9 +24,9 @@
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Закаленное стекло</a>
                 <a class="dropdown-item" href="#">Пожаростойкое стекло</a>
-                <a class="dropdown-item" href="#">xxxxxxxxxxxxx</a>
+                <a class="dropdown-item" href="#">...</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">xxxxxxxxxxx</a>
+                <a class="dropdown-item" href="#">...</a>
             </div>
         </div>
         <div class="dropdown">                                    

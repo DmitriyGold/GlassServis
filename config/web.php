@@ -9,8 +9,9 @@ $config = [
     'bootstrap' => ['log'],
     'language' => 'ru-RU',
     'modules' => [
-        'admin' => [
-            'class' => 'app\modules\admin_435\admin_435',
+        'admin_435' => [
+            'class' => 'app\modules\admin_435\module',
+            'layout' => 'app_main', // установили свой шаблон для админки 
         ],
     ],
     'aliases' => [

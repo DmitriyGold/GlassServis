@@ -3,11 +3,14 @@
 @font-size3: 24px;
 @font-size4: 40px;
 @font-size5: 64px;
+@font-size6: 32px;
 
 @color-1: #CCCCCC; // серый
 @color-2: #00BCB2; // морская волна 
 @color-3: #36758C; // синий текст иконок
 @color-4: #1A252B; // фон футера
+@color-33: #D2E8F2;
+
 
 @font1-family: 'Montserrat', sans-serif;
 @font2-family: 'Raleway', sans-serif;
@@ -15,6 +18,42 @@
 html,
 body {
     height: 100%;
+}
+
+
+
+.paralax2-content {
+    margin-top: -140px;
+    font-size: @font-size6;
+    background-color: transparent;
+    font-family: @font1-family;
+    color: @color-3;
+    text-shadow: 1px 1px 2px #fff, 0 0 1em @color-3; /* Параметры тени */
+    height: 140px;
+    .cont2 {
+        font-size: @font-size3;
+    }
+}
+
+.paralax3-content {
+    margin-top: -140px;
+    font-size: @font-size4;
+    background-color: transparent;
+    font-family: @font1-family;
+    color: @color-3;
+    text-shadow: 1px 1px 2px #fff, 0 0 1em @color-3; /* Параметры тени */
+    height: 140px;
+}
+
+.my-h1 {
+    font-size: @font-size4;
+}
+
+.my-h2 {
+    font-size: @font-size3;
+}
+.my-h3 {
+    font-size: @font-size2;
 }
 
 .wrap {
@@ -25,6 +64,58 @@ body {
     .container-fluid {
         padding: 0px 0px;
     }
+}
+
+.my-background-col{
+    background-color: @color-33 !important; 
+}
+
+.small-box-1 {
+    //width: 100%;
+    max-height: 500px;
+    margin: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    img {
+        width: 100%;
+        max-height: 490px;
+        margin-top: 10px;
+    }
+}
+
+.main-card-services {
+    position: relative;
+    img:hover {
+        opacity: 0.9;
+    }
+    &:hover  .card-content-services{
+        padding-top:  70px; /* Some padding */
+        height: 97%;
+    }
+}
+
+.card-content-services {
+    position: absolute; /* Position the background text */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* color text */
+    width: 100%; /* Full width */
+
+    padding-top:  10px; /* Some padding */
+    padding-bottom:  40px; /* Some padding */
+    transition: 0.8s ease;
+    overflow: hidden;
+    height: 0;
+}
+
+.block-3px {
+    background-color: @color-3;
+    padding: 0px;
+    margin: 30px;
+    height: 3px;
+    width: 100%;
 }
 
 // логотип
@@ -120,10 +211,19 @@ a.desc:after {
 }
 
 @media (max-width: 991px) {
-
+    .paralax2-content {
+        font-size: @font-size3;
+        .cont2 {
+            font-size: @font-size2;
+        }
+    }
+    .paralax3-content {
+        font-size: @font-size6;
+    }
 }
 
 @media (max-width: 767px) {
+
 }
 
 

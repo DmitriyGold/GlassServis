@@ -2,6 +2,38 @@ html,
 body {
   height: 100%;
 }
+.paralax2-content {
+  margin-top: -140px;
+  font-size: 32px;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  color: #36758C;
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #36758C;
+  /* Параметры тени */
+  height: 140px;
+}
+.paralax2-content .cont2 {
+  font-size: 24px;
+}
+.paralax3-content {
+  margin-top: -140px;
+  font-size: 40px;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  color: #36758C;
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #36758C;
+  /* Параметры тени */
+  height: 140px;
+}
+.my-h1 {
+  font-size: 40px;
+}
+.my-h2 {
+  font-size: 24px;
+}
+.my-h3 {
+  font-size: 20px;
+}
 .wrap {
   min-height: 100%;
   height: auto;
@@ -9,6 +41,58 @@ body {
 }
 .wrap .container-fluid {
   padding: 0px 0px;
+}
+.my-background-col {
+  background-color: #D2E8F2 !important;
+}
+.small-box-1 {
+  max-height: 500px;
+  margin: auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.small-box-1 img {
+  width: 100%;
+  max-height: 490px;
+  margin-top: 10px;
+}
+.main-card-services {
+  position: relative;
+}
+.main-card-services img:hover {
+  opacity: 0.9;
+}
+.main-card-services:hover .card-content-services {
+  padding-top: 70px;
+  /* Some padding */
+  height: 97%;
+}
+.card-content-services {
+  position: absolute;
+  /* Position the background text */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  /* color text */
+  width: 100%;
+  /* Full width */
+  padding-top: 10px;
+  /* Some padding */
+  padding-bottom: 40px;
+  /* Some padding */
+  transition: 0.8s ease;
+  overflow: hidden;
+  height: 0;
+}
+.block-3px {
+  background-color: #36758C;
+  padding: 0px;
+  margin: 30px;
+  height: 3px;
+  width: 100%;
 }
 .navbar-brand {
   color: #00BCB2;
@@ -83,5 +167,16 @@ a.desc:after {
 .site-index {
   width: 100%;
   height: auto;
+}
+@media (max-width: 991px) {
+  .paralax2-content {
+    font-size: 24px;
+  }
+  .paralax2-content .cont2 {
+    font-size: 20px;
+  }
+  .paralax3-content {
+    font-size: 32px;
+  }
 }
 /*# sourceMappingURL=site.css.map */
