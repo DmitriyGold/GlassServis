@@ -21,7 +21,7 @@ class News extends \yii\db\ActiveRecord {
      * {@inheritdoc}
      */
     public static function tableName() {
-        return 'News';
+        return 'news';
     }
 
     /**

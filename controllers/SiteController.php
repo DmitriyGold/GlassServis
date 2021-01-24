@@ -68,7 +68,6 @@ class SiteController extends Controller {
 
         $news = News::find()
                 ->where(['hide' => 0])
-                ->orderBy('date DESC')
                 ->asArray()
                 ->all();
 
