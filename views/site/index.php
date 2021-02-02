@@ -7,10 +7,21 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use app\widgets\CardWidget;
 ?>
+
 <div class="site-index">
+    <div  class="parallax1"></div>                 
+
+    <div class="top-content">
+        <div class="row">
+            <div class="cont-top col-12">
+                <strong><?= $main[3][text] ?> <br> <?= $main[4][text] ?>
+                </strong></div>
+            <div class="cont-center col-12"><?= $main[5][text] ?></div> 
+            <div class="cont-bottom col-12"><?= $main[6][text] ?></div> 
+        </div>
+    </div>
+
     <div class="body-content">
-
-
         <div class="row mt-5 text-center">
             <div class="col">
                 <p><span class="my-h1 my-5">Изготавливаем стекло любой сложности под заказ.</span></p>

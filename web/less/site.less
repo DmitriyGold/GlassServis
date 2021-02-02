@@ -20,7 +20,130 @@ body {
     height: 100%;
 }
 
+.img-card {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    .img1{
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
 
+
+.wrapper-card-1 {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    img {
+        width: 100%; /* Ширина изображений */
+        height: 100%; /* Высота изображении */
+        object-fit: cover; /* Вписываем фотографию в область */
+    }
+}
+
+.wrapper-card-2 {
+    width: 50%;
+    height: auto; 
+    overflow: hidden;
+    img {
+        width: 100%; /* Ширина изображений */
+        height: 100%; /* Высота изображении */
+        object-fit: cover; /*Вписываем фотографию в область */
+    }
+}
+
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+}
+
+.shadow2 {
+    border: 2px solid @color-3;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+    margin-bottom: 25px; 
+}
+
+.gray_background {
+    background-color: @color-1;
+}
+
+.container-fluid {
+    .breadcrumb {   
+        background-color: transparent;
+        padding-left: 50px;
+        margin-top: 30px;
+        font-family: @font2-family;
+        font-size:  @font-size1;
+        li {
+            padding-left: 5px;
+        }
+    }
+}
+
+.site-about {
+    font-family: @font2-family;
+    font-size:  @font-size3;
+    position: relative;
+    .img1 {
+        background-image: url('/images/about/IMG_20210130_141447.jpg');        
+        min-height: 576px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 0;
+    }
+
+    .about-top {
+        position: absolute;
+        top: 350px;
+        .title {
+            font-family: @font1-family;
+            color: #FFF;
+            text-shadow: 1px 1px 2px black, 0 0 1em @color-3; /* Параметры тени */
+            font-size:  @font-size5;
+        }
+        .info {
+            color: #FFF;
+            background-color: #FFF;
+            color: black;
+        }
+        .line-bottom-2 {
+            border-bottom-color: #FFF;
+        }
+    }
+    .about-center {
+        margin-top: 180px;
+    }
+    @media (max-width: 767px) {
+        .about-center {
+            margin-top: 240px;
+        }
+    }
+
+}
+
+
+
+.top-content {
+    margin-top: -430px;
+    padding-left: 80px;
+    background-color: transparent;
+    font-family: @font1-family;
+    color: #FFF;
+    text-shadow: 1px 1px 2px black, 0 0 1em @color-3; /* Параметры тени */
+    height: 430px;
+    .cont-top {
+        font-size:  @font-size5;
+    }
+    .cont-center {
+        font-size:  @font-size4;
+    }
+    .cont-bottom {
+        font-size:  @font-size3;
+    }
+}
 
 .paralax2-content {
     margin-top: -140px;
@@ -110,13 +233,17 @@ body {
     height: 0;
 }
 
-.block-3px {
-    background-color: @color-3;
-    padding: 0px;
-    margin: 30px;
-    height: 3px;
-    width: 100%;
+
+.block-text1 {
+    color: @color-2;
+    font-weight: 600;
 }
+
+.block-text2 {
+    color: @color-3;
+    font-weight: 600;
+}
+
 
 // логотип
 .navbar-brand {
@@ -206,8 +333,18 @@ a.desc:after {
     }
 }
 
-@media (max-width: 1199px) {
-
+@media (max-width: 1300px) {
+    .top-content {
+        .cont-top {
+            font-size:  @font-size4;
+        }
+        .cont-center {
+            font-size:  @font-size3;
+        }
+        .cont-bottom {
+            font-size:  @font-size2;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -220,10 +357,25 @@ a.desc:after {
     .paralax3-content {
         font-size: @font-size6;
     }
+    .top-content {
+        margin-top: -330px;
+        height: 330px;
+        padding-left: 50px;
+    }
 }
 
 @media (max-width: 767px) {
-
+    .top-content {
+        .cont-top {
+            font-size:  @font-size3;
+        }
+        .cont-center {
+            font-size:  @font-size2;
+        }
+        .cont-bottom {
+            font-size:  @font-size1;
+        }
+    }
 }
 
 

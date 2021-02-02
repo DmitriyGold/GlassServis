@@ -80,19 +80,6 @@ AppAsset::register($this);
                         </a> 
                     </div>
                 </div>            
-
-                <div  class="parallax1"></div>                 
-
-                <div class="header-content">
-                    <div class="row">
-                        <div class="cont-top col-12">
-                            <strong><?= $main[3][text] ?> <br> <?= $main[4][text] ?>
-                            </strong></div>
-                        <div class="cont-center col-12"><?= $main[5][text] ?></div> 
-                        <div class="cont-bottom col-12"><?= $main[6][text] ?></div> 
-                    </div>
-                </div>
-
             </div>
 
             <div class="container-fluid">
