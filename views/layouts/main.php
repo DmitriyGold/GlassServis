@@ -74,7 +74,7 @@ AppAsset::register($this);
 
                     <div class="col-12 col-lg-2 text-center">
                         <a href="<?= Url::to(['#']); ?>">
-                            <button type="button" class="btn header-btn mb-1">
+                            <button type="button" class="btn my-btn mb-1">
                                 <i class="fa fa-phone" aria-hidden="true" style="color: #ccc;"></i> 
                                 заказать звонок</button>
                         </a> 

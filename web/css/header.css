@@ -37,19 +37,6 @@
   padding-bottom: 1px;
   border-bottom: 3px solid #00BCB2;
 }
-.header .header-bottom .header-btn {
-  font-size: 14px;
-  font-stretch: expanded;
-  background-color: #00BCB2;
-  color: white;
-  width: 150px;
-  border-radius: 0 20px 0 20px;
-}
-.header .header-bottom .header-btn:hover {
-  background-color: #FFFFFF;
-  border: 2px solid #00BCB2;
-  color: #000;
-}
 @media (max-width: 1300px) {
   .header {
     font-size: 14px;
@@ -61,16 +48,10 @@
     padding-left: 6px;
     padding-right: 6px;
   }
-  .header .header-bottom .header-btn {
-    width: 100px;
-  }
 }
 @media (max-width: 991px) {
   .header .header-bottom .nav-link {
     font-size: 20px;
-  }
-  .header .header-bottom .header-btn {
-    width: 150px;
   }
 }
 @media (max-width: 767px) {
@@ -79,9 +60,6 @@
   }
   .header .header-bottom .nav-link {
     font-size: 20px;
-  }
-  .header .header-bottom .header-btn {
-    width: 150px;
   }
 }
 /*# sourceMappingURL=header.css.map */

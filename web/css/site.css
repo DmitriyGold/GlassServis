@@ -11,6 +11,20 @@ body {
   max-width: 100%;
   overflow: hidden;
 }
+.my-btn {
+  font-size: 14px;
+  font-stretch: expanded;
+  background-color: #00BCB2;
+  color: white;
+  width: 160px;
+  border-radius: 0 20px 0 20px;
+  border: 2px solid transparent;
+}
+.my-btn:hover {
+  background-color: #FFFFFF;
+  border: 2px solid #00BCB2;
+  color: #000;
+}
 .wrapper-card-1 {
   width: 50%;
   height: auto;
@@ -297,6 +311,9 @@ a.desc:after {
   .top-content .cont-bottom {
     font-size: 20px;
   }
+  .my-btn {
+    width: 110px;
+  }
 }
 @media (max-width: 991px) {
   .paralax2-content {
@@ -313,6 +330,9 @@ a.desc:after {
     height: 330px;
     padding-left: 50px;
   }
+  .my-btn {
+    width: 160px;
+  }
 }
 @media (max-width: 767px) {
   .top-content .cont-top {
@@ -323,6 +343,9 @@ a.desc:after {
   }
   .top-content .cont-bottom {
     font-size: 14px;
+  }
+  .my-btn {
+    width: 160px;
   }
 }
 /*# sourceMappingURL=site.css.map */

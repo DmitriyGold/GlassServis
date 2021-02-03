@@ -31,6 +31,22 @@ body {
 }
 
 
+.my-btn {
+    font-size: @font-size1;  
+    font-stretch: expanded; // широкий текст
+    background-color: @color-2;
+    color: white;
+    width: 160px;
+    border-radius: 0 20px 0 20px;
+     border: 2px solid transparent;
+    &:hover {
+        background-color: #FFFFFF; 
+        border: 2px solid @color-2;
+        color: #000;
+    }
+}  
+
+
 .wrapper-card-1 {
     width: 50%;
     height: auto;
@@ -52,7 +68,6 @@ body {
         object-fit: cover; /*Вписываем фотографию в область */
     }
 }
-
 
 .shadow {
     box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
@@ -121,7 +136,6 @@ body {
             margin-top: 240px;
         }
     }
-
 }
 
 
@@ -345,6 +359,9 @@ a.desc:after {
             font-size:  @font-size2;
         }
     }
+    .my-btn {
+        width: 110px;
+    }  
 }
 
 @media (max-width: 991px) {
@@ -362,6 +379,9 @@ a.desc:after {
         height: 330px;
         padding-left: 50px;
     }
+    .my-btn {
+        width: 160px;
+    }  
 }
 
 @media (max-width: 767px) {
@@ -376,6 +396,9 @@ a.desc:after {
             font-size:  @font-size1;
         }
     }
+    .my-btn {
+        width: 160px;
+    }  
 }
 
 

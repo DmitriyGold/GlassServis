@@ -5,6 +5,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use app\widgets\ImgWidget;
+use app\widgets\Img_fullWidget;
 
 $this->title = 'О нас';
 //$this->params['breadcrumbs'][] = $this->title;
@@ -28,7 +29,7 @@ $this->title = 'О нас';
                 <div class="container">
                     <div class="title line-bottom-2"><strong><?= Html::encode($this->title) ?></strong></div>
 
-                    <div class="info p-3 shadow">Компания <span class="block-text1">«Гласс Сервис»</span> была создана в 2020 г. 
+                    <div class="info p-3 shadow">Компания <strong>«Гласс Сервис»</strong> была создана в 2020 г. 
                         группой единомышленников, имеющих за плечами многолетний опыт работы в стекольной отрасли.
                         <br><br>Мы молодая, перспективная и быстро развивающаяся компания на стекольном рынке Москвы и МО.
                     </div>            
@@ -40,13 +41,12 @@ $this->title = 'О нас';
             <div class="container my-5">
                 <div class="row">
                     <div class="col">
-                        Производственная площадка ООО "Гласс Сервис" размещена в подмосковном городе Клин на территории 
+                        Производственная площадка <strong>OOO «Гласс Сервис»</strong> размещена в подмосковном городе Клин на территории 
                         стекольного завода <strong>AGC</strong>, одного из мировых лидеров производителей листового float-стекла.
                         Территориальное соседство с японским концерном позволяет нам выполнять любые объемные 
                         заказы точно всрок и по ценам ниже средних.
                     </div>
-                </div>
-                <div class="line-bottom-1 my-5"></div>
+                </div>                
             </div>
 
             <div class="container my-5">
@@ -54,7 +54,8 @@ $this->title = 'О нас';
                     <div class="col">
                         <h2 class="block-text2">МЫ ПРЕДЛАГАЕМ:</h2>
                     </div>
-                </div>             
+                </div>
+                <div class="line-bottom-1 mb-5"></div>
             </div>
 
             <div class="row justify-content-around align-self-center mb-5">
@@ -67,21 +68,20 @@ $this->title = 'О нас';
                     <strong>закаленного</strong> стекла для
                     фасадов зданий, офисных перегородок, стеклянной мебели, торгового оборудования 
                 </div>
-                <div class="col-11 col-lg-3 shadow2  text-center pt-5">
+                <div class="col-11 col-lg-3 shadow2  text-center pt-5 mb-5">
                     <strong>огнеупорное стекло</strong>
                 </div>
             </div>
 
-            <div class="container"><div class="line-bottom-1 my-5"></div></div>
-
-
             <div class="container my-5">
-                <div class="row text-center  my-5">
+                <div class="row justify-content-center"><h2 class="block-text2">ПАРК НАШЕГО ОБОРУДОВАНИЯ:</h2></div>
+                <div class="row text-center mt-5">
                     <div class="col">
-                        Компания "Гласс Сервис" располагает новым современным стеклообрабатывающем оборудование 
+                        Компания <strong>«Гласс Сервис»</strong> располагает новым современным стеклообрабатывающем оборудование 
                         итальянской фирмы <strong>Intermac</strong>:                     
                     </div>
                 </div> 
+                <div class="line-bottom-1 mb-5"></div>
                 <div class="row my-5">
                     <div class="col">
                         <ul>
@@ -92,7 +92,14 @@ $this->title = 'О нас';
                             <li>комбинированные линии по обработке стекла Genius CT-A</li>
                         </ul>
                     </div>
-                </div>             
+                </div> 
+                <div class="row text-center  mt-5">
+                    <div class="col">
+                        Горизонтальная мойка с инновационной системой Ecosave от компании Neptun 
+                        <strong>Tornado HP</strong>.                     
+                    </div>
+                </div> 
+                <div class="line-bottom-1 mb-5"></div>
             </div>
 
             <div class="row justify-content-center align-items-center px-5">
@@ -116,17 +123,48 @@ $this->title = 'О нас';
                     'imagePath' => '@web/images/about/IMG_20210130_143055.jpg',
                 ]);
                 ?>
-
             </div>
 
             <div class="container my-5">
-                <div class="row text-center">
+                <div class="row text-center mt-5">
                     <div class="col">
-                        <h2 class="block-text2">НАШЕ ПРЕИМУЩЕСТВО:</h2>
+                        Закалка и моллирование стекла осуществляется на высокопроизводительной печи North Glass.                        
                     </div>
-                </div>             
+                </div> 
+                <div class="line-bottom-1 mb-5"></div>
             </div>
 
+            <div class="row justify-content-center my-5 px-5" >
+                <?=
+                Img_fullWidget::widget([
+                    'imagePath' => '@web/images/about/IMG_20210130_143527.jpg',
+                ])
+                ?>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="info p-3 shadow my-5 text-center">
+                Компания <strong>"Гласс Сервис"</strong> заинтересована в выстраивании 
+                долгосрочных взаимоотношений с <strong>В2В</strong> партнерами.
+            </div>           
+        </div>
+
+        <div class="container my-5">
+            <div class="row text-center">
+                <div class="col">
+                    <strong>Остались вопросы? Задайте их нашему специалисту!</strong>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 col-md-3 text-center mb-3">
+                    <a href="<?= Url::to(['#']); ?>">
+                        <button type="button" class="btn my-btn mb-1">
+                            <i class="fa fa-phone" aria-hidden="true" style="color: #ccc;"></i> 
+                            написать письмо</button>
+                    </a> 
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -139,8 +177,7 @@ $this->title = 'О нас';
 
 
 
-North Glass - высокопроизводительная печь закаливания плоского и гнутого стекла.
-с системой двусторонней принудительной конвекции решетчатого расположения.
+
 
 
 
