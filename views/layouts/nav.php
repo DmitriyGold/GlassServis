@@ -1,4 +1,5 @@
 <?php
+
 use yii\helpers\Url;
 ?>
 
@@ -12,17 +13,7 @@ use yii\helpers\Url;
     <div class="navbar-nav text-center text-lg-right">
         <a class="nav-item nav-link active" href="#"><i class="fa fa-home" aria-hidden="true" style="color: #999; font-size:24px;"></i></a>
 
-        <div class="dropdown mx-2">                                    
-            <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
-               aria-haspopup="true" aria-expanded="false">О компании 
-            </a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="<?= Url::to(['/site/about']); ?>">О нас</a>
-                <a class="dropdown-item" href="#">Сертификаты, ГОСТЫ, Техусловия</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Вакансии</a>
-            </div>
-        </div>
+        <a class="nav-item nav-link  mx-2" href="<?= Url::to(['/site/about']); ?>">О компании</a>
 
         <div class="dropdown  mx-2">                                    
             <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 

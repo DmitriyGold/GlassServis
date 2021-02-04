@@ -26,10 +26,10 @@ $this->title = 'О нас';
         <div class="img1"></div>         
         <div class="container">
             <div class="about-top">
-                <div class="container">
+                <div class="container ">
                     <div class="title line-bottom-2"><strong><?= Html::encode($this->title) ?></strong></div>
 
-                    <div class="info p-3 shadow">Компания <strong>«Гласс Сервис»</strong> была создана в 2020 г. 
+                    <div class="info p-3 shadow text-center">Компания <strong>«Гласс Сервис»</strong> была создана в 2020 г. 
                         группой единомышленников, имеющих за плечами многолетний опыт работы в стекольной отрасли.
                         <br><br>Мы молодая, перспективная и быстро развивающаяся компания на стекольном рынке Москвы и МО.
                     </div>            
@@ -37,10 +37,10 @@ $this->title = 'О нас';
             </div>
         </div>
 
-        <div class="about-center">
+        <div class="about-center ">
             <div class="container my-5">
                 <div class="row">
-                    <div class="col">
+                    <div class="col  text-center">
                         Производственная площадка <strong>OOO «Гласс Сервис»</strong> размещена в подмосковном городе Клин на территории 
                         стекольного завода <strong>AGC</strong>, одного из мировых лидеров производителей листового float-стекла.
                         Территориальное соседство с японским концерном позволяет нам выполнять любые объемные 
