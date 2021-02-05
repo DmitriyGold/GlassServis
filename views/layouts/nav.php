@@ -3,7 +3,6 @@
 use yii\helpers\Url;
 ?>
 
-
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler1"
         aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -11,7 +10,7 @@ use yii\helpers\Url;
 
 <div class="collapse navbar-collapse justify-content-<?= "$model1" ?> col-12 col-lg-<?= "$model2" ?>" id="navbarToggler1">
     <div class="navbar-nav text-center text-lg-right">
-        <a class="nav-item nav-link active" href="#"><i class="fa fa-home" aria-hidden="true" style="color: #999; font-size:24px;"></i></a>
+        <a class="nav-item nav-link active" href="<?= Url::to(['/site/index']); ?>"><i class="fa fa-home" aria-hidden="true" style="color: #999; font-size:24px;"></i></a>
 
         <a class="nav-item nav-link  mx-2" href="<?= Url::to(['/site/about']); ?>">О компании</a>
 
@@ -38,7 +37,7 @@ use yii\helpers\Url;
                 <a class="dropdown-item" href="#">Доставка</a>
             </div>
         </div>
-        <a class="nav-item nav-link  mx-2" href="#">Контакты</a>
+        <a class="nav-item nav-link  mx-2" href="<?= Url::to(['/site/my_contact']);?>">Контакты</a>
     </div>
 </div>
 </nav>

@@ -33,5 +33,9 @@ $this->params['breadcrumbs'][] = '';
         <strong><a href = "<?= Url::to('admin_435/services/index') ?>">Продукция и услуги.</a></strong>
     </div>
 
+            <div class="container my-2">
+        <strong><a href = "<?= Url::to('admin_435/contact/index') ?>">Страница контактов.</a></strong>
+    </div>
+    
 
 </div>

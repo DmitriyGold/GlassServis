@@ -27,7 +27,7 @@ $this->title = 'О нас';
         <div class="container">
             <div class="about-top">
                 <div class="container ">
-                    <div class="title line-bottom-2"><strong><?= Html::encode($this->title) ?></strong></div>
+                    <div class="caption-3 line-bottom-2"><strong><?= Html::encode($this->title) ?></strong></div>
 
                     <div class="info p-3 shadow text-center">Компания <strong>«Гласс Сервис»</strong> была создана в 2020 г. 
                         группой единомышленников, имеющих за плечами многолетний опыт работы в стекольной отрасли.
@@ -50,12 +50,13 @@ $this->title = 'О нас';
             </div>
 
             <div class="container my-5">
-                <div class="row text-center">
-                    <div class="col">
-                        <h2 class="block-text2">МЫ ПРЕДЛАГАЕМ:</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-4 caption-2">
+                        <div class="">МЫ ПРЕДЛАГАЕМ:</div>
+                    </div>
+                    <div class="col-12 col-lg-7 line-bottom-1">              
                     </div>
                 </div>
-                <div class="line-bottom-1 mb-5"></div>
             </div>
 
             <div class="row justify-content-around align-self-center mb-5">
@@ -74,14 +75,22 @@ $this->title = 'О нас';
             </div>
 
             <div class="container my-5">
-                <div class="row justify-content-center"><h2 class="block-text2">ПАРК НАШЕГО ОБОРУДОВАНИЯ:</h2></div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-7 caption-2">
+                        <div class="">ПАРК НАШЕГО ОБОРУДОВАНИЯ:</div>
+                    </div>
+                    <div class="col-12 col-lg-4 line-bottom-1">              
+                    </div>
+                </div>
+
                 <div class="row text-center mt-5">
                     <div class="col">
                         Компания <strong>«Гласс Сервис»</strong> располагает новым современным стеклообрабатывающем оборудование 
                         итальянской фирмы <strong>Intermac</strong>:                     
                     </div>
                 </div> 
-                <div class="line-bottom-1 mb-5"></div>
+
                 <div class="row my-5">
                     <div class="col">
                         <ul>
@@ -99,13 +108,12 @@ $this->title = 'О нас';
                         <strong>Tornado HP</strong>.                     
                     </div>
                 </div> 
-                <div class="line-bottom-1 mb-5"></div>
             </div>
 
             <div class="row justify-content-center align-items-center px-5">
                 <?php
                 echo ImgWidget::widget([
-                    'imagePath' => '@web/images/about/IMG_20210130_142122.jpg',
+                    'imagePath' => '@web/images/about/IMG_20210130_143055.jpg',
                 ]);
                 echo ImgWidget::widget([
                     'imagePath' => '@web/images/about/IMG_20210130_142641.jpg',
@@ -120,7 +128,7 @@ $this->title = 'О нас';
                     'imagePath' => '@web/images/about/IMG_20210130_142939.jpg',
                 ]);
                 echo ImgWidget::widget([
-                    'imagePath' => '@web/images/about/IMG_20210130_143055.jpg',
+                    'imagePath' => '@web/images/about/IMG_20210130_142122.jpg',
                 ]);
                 ?>
             </div>
@@ -131,7 +139,6 @@ $this->title = 'О нас';
                         Закалка и моллирование стекла осуществляется на высокопроизводительной печи North Glass.                        
                     </div>
                 </div> 
-                <div class="line-bottom-1 mb-5"></div>
             </div>
 
             <div class="row justify-content-center my-5 px-5" >

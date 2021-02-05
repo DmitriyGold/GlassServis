@@ -1,8 +1,22 @@
 /*
 декоративные элементы
 */
-@color-2: #00BCB2;
+@font-size1: 14px;
+@font-size2: 20px;
+@font-size3: 24px;
+@font-size4: 40px;
+@font-size5: 32px;
+@font-size6: 64px;
+
+@color-1: #CCCCCC; // серый
+@color-2: #00BCB2; // морская волна 
 @color-3: #36758C; // синий текст иконок
+@color-4: #1A252B; // фон футера
+@color-33: #D2E8F2;
+
+
+@font1-family: 'Montserrat', sans-serif;
+@font2-family: 'Raleway', sans-serif;
 
 .line-bottom-1 {
     border-bottom: 2px solid @color-2; 
@@ -11,5 +25,52 @@
 .line-bottom-2 {
     border-bottom: 2px solid @color-3; 
 }
+
+.shadow {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+}
+
+.shadow2 {
+    border: 2px solid @color-3;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+    margin-bottom: 25px; 
+}
+
+
+body{background: #8BC34A;}
+
+.text1{
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%);
+  font-family: 'Oswald', sans-serif;
+  line-height: 60px;
+  span{
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    display: inline-block;
+    letter-spacing: 5px;
+    transition: 2s;
+    text-shadow: 0px 0px 0px #558B2F;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    cursor: default;
+    &:hover{
+      text-shadow: -8px 8px 0px #558B2F;
+      transition: 0.3s;
+      top: -8px;
+      left: 8px;
+    }
+    &.space{width: 20px;height: 100%;}
+  }
+}
+
 
 

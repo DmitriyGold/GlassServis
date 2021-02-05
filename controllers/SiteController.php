@@ -13,6 +13,7 @@ use app\models\db\Main;
 use app\models\db\News;
 use app\models\db\Promotions;
 use app\models\db\Services;
+use app\models\db\Contact;
 
 class SiteController extends Controller {
 
@@ -89,6 +90,22 @@ class SiteController extends Controller {
 
 
         return $this->render('index', compact('main', 'news', 'promotions', 'services_1', 'services_2'));
+    }
+
+    /**
+      Контакты
+     */
+    public function actionMy_contact() {
+
+        $model = Contact::find()
+                ->where(['hide' => 0])
+                ->orderBy('sort')
+                ->asArray()
+                ->all();                     
+        
+        return $this->render('my_contact', [
+                    'model' => $model,
+        ]);
     }
 
     /**

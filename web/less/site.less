@@ -2,8 +2,8 @@
 @font-size2: 20px;
 @font-size3: 24px;
 @font-size4: 40px;
-@font-size5: 64px;
-@font-size6: 32px;
+@font-size5: 32px;
+@font-size6: 64px;
 
 @color-1: #CCCCCC; // серый
 @color-2: #00BCB2; // морская волна 
@@ -11,9 +11,16 @@
 @color-4: #1A252B; // фон футера
 @color-33: #D2E8F2;
 
-
 @font1-family: 'Montserrat', sans-serif;
 @font2-family: 'Raleway', sans-serif;
+
+
+.caption_block {
+    font-family: @font1-family;
+    color: @color-3;
+    text-shadow: 1px 1px 2px #999, 0 0 1em #CCC; /* Параметры тени */
+    font-weight: 600; /* Жирное начертание */
+}
 
 html,
 body {
@@ -30,7 +37,6 @@ body {
     }
 }
 
-
 .my-btn {
     font-size: @font-size1;  
     font-stretch: expanded; // широкий текст
@@ -38,14 +44,13 @@ body {
     color: white;
     width: 160px;
     border-radius: 0 20px 0 20px;
-     border: 2px solid transparent;
+    border: 2px solid transparent;
     &:hover {
         background-color: #FFFFFF; 
         border: 2px solid @color-2;
         color: #000;
     }
 }  
-
 
 .wrapper-card-1 {
     width: 50%;
@@ -58,28 +63,6 @@ body {
     }
 }
 
-.wrapper-card-2 {
-    width: 50%;
-    height: auto; 
-    overflow: hidden;
-    img {
-        width: 100%; /* Ширина изображений */
-        height: 100%; /* Высота изображении */
-        object-fit: cover; /*Вписываем фотографию в область */
-    }
-}
-
-.shadow {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
-    padding: 10px;
-}
-
-.shadow2 {
-    border: 2px solid @color-3;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
-    padding: 10px;
-    margin-bottom: 25px; 
-}
 
 .gray_background {
     background-color: @color-1;
@@ -98,6 +81,54 @@ body {
     }
 }
 
+
+/* заголовок текста, страницы*/
+.caption-1 {
+    .caption_block();
+    font-size:  @font-size4;
+}
+
+.caption-2 {
+    .caption_block();
+    font-size:  @font-size5;
+}
+
+.caption-3 {
+    .caption_block();
+    font-size:  @font-size6;
+}
+
+.caption-w {   
+    .caption-1 {
+        color: @color-3;
+        text-shadow: 1px 1px 2px #999, 0 0 1em #CCC; /* Параметры тени */
+    }
+
+    .caption-2 {
+        color: @color-3;   
+        text-shadow: 1px 1px 2px #999, 0 0 1em #CCC; /* Параметры тени */
+    }
+
+    .caption-3 {
+        color: #FFF;
+        text-shadow: 1px 1px 2px black, 0 0 1em #CCC; /* Параметры тени */
+    }
+}
+
+
+.site-contact {
+    font-family: @font2-family;
+    font-size:  @font-size3;
+    .info {
+        color: #FFF;
+        background-color: #FFF;
+        color: black;
+    }
+    .line-bottom-2 {
+        border-bottom-color: #FFF;
+    }
+}
+
 .site-about {
     font-family: @font2-family;
     font-size:  @font-size3;
@@ -109,15 +140,11 @@ body {
         background-repeat: no-repeat;
         background-position: center 0;
     }
-
     .about-top {
         position: absolute;
         top: 350px;
-        .title {
-            font-family: @font1-family;
-            color: #FFF;
-            text-shadow: 1px 1px 2px black, 0 0 1em @color-3; /* Параметры тени */
-            font-size:  @font-size5;
+        .caption-3 {
+            text-shadow: 1px 1px 2px #FFF, 0 0 1em #FFF; /* Параметры тени */
         }
         .info {
             color: #FFF;
@@ -138,6 +165,10 @@ body {
     }
 }
 
+.my-margin-1 {
+    margin-top: -150px;
+    margin-bottom: 150px;
+}
 
 
 .top-content {
@@ -149,19 +180,20 @@ body {
     text-shadow: 1px 1px 2px black, 0 0 1em @color-3; /* Параметры тени */
     height: 430px;
     .cont-top {
-        font-size:  @font-size5;
+        font-size:  @font-size6;
     }
     .cont-center {
         font-size:  @font-size4;
     }
     .cont-bottom {
-        font-size:  @font-size3;
+        font-size:  @font-size5;
+        text-shadow: 1px 1px 2px black, 0 0 1em red; /* Параметры тени */
     }
 }
 
 .paralax2-content {
     margin-top: -140px;
-    font-size: @font-size6;
+    font-size: @font-size5;
     background-color: transparent;
     font-family: @font1-family;
     color: @color-3;
@@ -203,8 +235,13 @@ body {
     }
 }
 
-.my-background-col{
-    background-color: @color-33 !important; 
+
+.text-big  {
+    text-transform: uppercase;
+}
+
+.my-background-col {
+    background-color: #eee;
 }
 
 .small-box-1 {
@@ -372,7 +409,7 @@ a.desc:after {
         }
     }
     .paralax3-content {
-        font-size: @font-size6;
+        font-size: @font-size5;
     }
     .top-content {
         margin-top: -330px;

@@ -1,3 +1,11 @@
+.caption_block {
+  font-family: 'Montserrat', sans-serif;
+  color: #36758C;
+  text-shadow: 1px 1px 2px #999, 0 0 1em #CCC;
+  /* Параметры тени */
+  font-weight: 600;
+  /* Жирное начертание */
+}
 html,
 body {
   height: 100%;
@@ -38,31 +46,6 @@ body {
   object-fit: cover;
   /* Вписываем фотографию в область */
 }
-.wrapper-card-2 {
-  width: 50%;
-  height: auto;
-  overflow: hidden;
-}
-.wrapper-card-2 img {
-  width: 100%;
-  /* Ширина изображений */
-  height: 100%;
-  /* Высота изображении */
-  object-fit: cover;
-  /*Вписываем фотографию в область */
-}
-.shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  /* Параметры тени */
-  padding: 10px;
-}
-.shadow2 {
-  border: 2px solid #36758C;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  /* Параметры тени */
-  padding: 10px;
-  margin-bottom: 25px;
-}
 .gray_background {
   background-color: #CCCCCC;
 }
@@ -75,6 +58,61 @@ body {
 }
 .container-fluid .breadcrumb li {
   padding-left: 5px;
+}
+/* заголовок текста, страницы*/
+.caption-1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #36758C;
+  text-shadow: 1px 1px 2px #999, 0 0 1em #CCC;
+  /* Параметры тени */
+  font-weight: 600;
+  /* Жирное начертание */
+  font-size: 40px;
+}
+.caption-2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #36758C;
+  text-shadow: 1px 1px 2px #999, 0 0 1em #CCC;
+  /* Параметры тени */
+  font-weight: 600;
+  /* Жирное начертание */
+  font-size: 32px;
+}
+.caption-3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #36758C;
+  text-shadow: 1px 1px 2px #999, 0 0 1em #CCC;
+  /* Параметры тени */
+  font-weight: 600;
+  /* Жирное начертание */
+  font-size: 64px;
+}
+.caption-w .caption-1 {
+  color: #36758C;
+  text-shadow: 1px 1px 2px #999, 0 0 1em #CCC;
+  /* Параметры тени */
+}
+.caption-w .caption-2 {
+  color: #36758C;
+  text-shadow: 1px 1px 2px #999, 0 0 1em #CCC;
+  /* Параметры тени */
+}
+.caption-w .caption-3 {
+  color: #FFF;
+  text-shadow: 1px 1px 2px black, 0 0 1em #CCC;
+  /* Параметры тени */
+}
+.site-contact {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+}
+.site-contact .info {
+  color: #FFF;
+  background-color: #FFF;
+  color: black;
+}
+.site-contact .line-bottom-2 {
+  border-bottom-color: #FFF;
 }
 .site-about {
   font-family: 'Raleway', sans-serif;
@@ -92,12 +130,9 @@ body {
   position: absolute;
   top: 350px;
 }
-.site-about .about-top .title {
-  font-family: 'Montserrat', sans-serif;
-  color: #FFF;
-  text-shadow: 1px 1px 2px black, 0 0 1em #36758C;
+.site-about .about-top .caption-3 {
+  text-shadow: 1px 1px 2px #FFF, 0 0 1em #FFF;
   /* Параметры тени */
-  font-size: 64px;
 }
 .site-about .about-top .info {
   color: #FFF;
@@ -114,6 +149,10 @@ body {
   .site-about .about-center {
     margin-top: 240px;
   }
+}
+.my-margin-1 {
+  margin-top: -150px;
+  margin-bottom: 150px;
 }
 .top-content {
   margin-top: -430px;
@@ -132,7 +171,9 @@ body {
   font-size: 40px;
 }
 .top-content .cont-bottom {
-  font-size: 24px;
+  font-size: 32px;
+  text-shadow: 1px 1px 2px black, 0 0 1em red;
+  /* Параметры тени */
 }
 .paralax2-content {
   margin-top: -140px;
@@ -174,8 +215,11 @@ body {
 .wrap .container-fluid {
   padding: 0px 0px;
 }
+.text-big {
+  text-transform: uppercase;
+}
 .my-background-col {
-  background-color: #D2E8F2 !important;
+  background-color: #eee;
 }
 .small-box-1 {
   max-height: 500px;

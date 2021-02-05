@@ -22,14 +22,93 @@ use app\widgets\CardWidget;
     </div>
 
     <div class="body-content">
-        <div class="row mt-5 text-center">
-            <div class="col">
-                <p><span class="my-h1 my-5">Изготавливаем стекло любой сложности под заказ.</span></p>
 
-                <p><span class="my-h2 my-5">Виды обработки стекла: <br>
-                        закалка, технологические вырезы, моллирование, сверление, зенковка, фацет, 
-                        шлифовка и европолировка кромки.
-                    </span></p>
+
+        <div class="container my-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-11">
+                    САЙТ на стадии разработки. <br>
+                    (для корректного отображения страницы перед началом просмотра сбросьте историю браузера)<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row  justify-content-center text-center">
+                <div class="col-12 caption-2">
+                    <div class="">ИЗГОТАВЛИВАЕМ СТЕКЛОИЗДЕЛИЯ ЛЮБОЙ СЛОЖНОСТИ ПОД ЗАКАЗ</div>
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-12">
+                    <ul>
+                        <li>в любых необходимых объемах</li>
+                        <li>точно в назначенный срок</li>
+                        <li>для B2b клиентов</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<div class="text1 d-none">Hover me</div>
+      
+
+        <div class="my-background-col my-5 pt-5">
+            <div class="row  justify-content-center text-center">
+                <div class="col-12 caption-2">
+                    <div class="text-big">Собственное производство на территории <br>стекольного гиганта 
+                        <img src="<?= Url::to('@web/images/AGС_logo.png'); ?>" width="73px;" alt="#">  
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row my-5 pb-5">
+                    <div class="col-12">
+                        <ul>
+                            <li>Новое современное оборудование</li>
+                            <li>Опытный персонал</li>
+                            <li>Контроль качества</li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+картинка
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+
+
+        <div  class="parallax2">
+        </div>
+
+        <div class="row justify-content-center text-center">
+            <div class="caption-w">
+                <div class="col-12 caption-3 my-margin-1">
+                    <div class="">НАША ПРОДУКЦИЯ</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid  my-background-col">
+            <div class="container">
+                <div class="row justify-content-center py-5 ddd1">
+                    <?php
+                    foreach ($services_1 as $value) {
+
+                        echo CardWidget::widget([
+                            'sitePage' => $value['sitePage'],
+                            'title' => $value['title'],
+                            'description' => $value['description'],
+                            'imagePath' => $value['imagePath'],
+                        ]);
+                    }
+                    ?>
+                </div>
             </div>
         </div>
 
@@ -37,162 +116,304 @@ use app\widgets\CardWidget;
             <div class="block-3px mt-4"></div>
         </div>
 
-        <div>
-            <div  class="parallax2">
-            </div>
-            <div class="row paralax2-content text-center">
-                <div class="col-12 px-2">
-                    <strong>Печь по закалке стекла NorthGlass.</strong>                
-                </div>
-                <div class="col-12 px-2 cont2"><strong>Новая система контроля температуры 
-                        значительно повышают эффективность производства и качество закалки
-                        стекла</strong>
-                </div>
-            </div>
 
-            <div class="container">
-                <div class="news container-fluid my-4">
+        <div  class="parallax3">
+        </div>  
 
-                    <div class="row text-center my-5">
-                        <div class="col">Новостной блок (присутствует если есть новости)</div>
-                    </div>
 
-                    <div class="row text-center px-5">
-                        <!-- Блок объявления. начало-->
-                        <?php if (!empty($news)) { ?>
-                            <?php foreach ($news as $value) { ?>
-                                <div class="col-6 text-center py-2">
-                                    <h4><strong><?= $value['title'] ?></strong></h4>
-                                    <div class="container">
-                                        <p><?= $value['short_text'] ?></p>
-                                    </div>
-                                </div>
-                            <?php } ?>
-
-                            <div class="col-12 text-center align-self-end pt-2">
-                                <?php $options = ['style' => ['color' => '#888']]; ?>
-                                <?= Html::a('подробнее <i class="fa fa-angle-double-right" aria-hidden="true"></i>', ['#'], $options) ?>
-                            </div>                 
-                        <?php } ?>
-                        <!-- Блок объявления. конец-->
-                    </div>
+        <div class="row justify-content-center text-center">
+            <div class="caption-w">
+                <div class="col-12 caption-3 my-margin-1">
+                    <div class="">УСЛУГИ</div>
                 </div>
             </div>
+        </div>
 
-            <div class="container my-5">
-                <div class="block-3px mt-4"></div>
+    </div>
+
+
+    <div class="container-fluid  my-background-col">
+        <div class="container">
+            <div class="row justify-content-center py-5">
+                <?php
+                foreach ($services_2 as $value) {
+
+                    echo CardWidget::widget([
+                        'sitePage' => $value['sitePage'],
+                        'title' => $value['title'],
+                        'description' => $value['description'],
+                        'imagePath' => $value['imagePath'],
+                    ]);
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+
+    _____________________
+
+    Солидное преимущество — собственное производство
+    Производственный цех компании «Glasstrong» выпускает более 30000 м2 готовой продукции в месяц.
+    Высокий темп и широкие возможности обеспечивают выполнение любых заказов в сжатые сроки.
+
+    Собственное производство компании «Glasstrong» по обработке стекла находится в городе Рязань
+    и является одним из самых крупных производств в России.
+
+    Мы отслеживаем инновации на мировом рынке стекла и внедряем их в свое производство. Зарубежное
+    оборудование фирм Busetti (Италия), Bottero (Италия), Yuntong (Китай) позволяет изготавливать 
+    стеклянные конструкции любых форм и конфигураций.
+    __________________
+
+    Ведущее предприятие Урфо
+    по переработке стекла
+
+    Компания "Еврогласс-Техно" располагает собственным производством, 
+    оснащенными передовым компьютерным оборудованием, а также большой склад стекла, 
+    позволяющий обеспечивать постоянное наличие материалов и бесперебойную работу.
+
+    На заводе установлено самое современное оборудование. В 2008-2011 годах прошло 
+    масштабное обновление линий. Это позволяет выпускать продукцию в кратчайшие сроки 
+    с соблюдением самых высоких современных требований.        
+    __________
+    О производственной компании Борус
+    Основное направление деятельности нашей компании – проектирование, 
+    изготовление и монтаж стеклянных конструкций «под ключ» из безопасного 
+    закаленного стекла, нержавеющей стали, с использованием металла, дерева, 
+    композитных материалов.
+
+    ПСК «Борус» создано в 2002 году в Москве группой единомышленников, имеющих за 
+    плечами более 10-ти лет опыта работы в строительной отрасли. Все ведущие специалисты
+    компании имеют высшее строительное образование, из них двое – кандидаты технических 
+    наук в данной области.
+    ____________________________
+    Для строительных и монтажных компаний 
+    стекло по вашим техническим заданиям, любого размера и необходимых характеристик
+    Закаленное стекло
+    Триплекс
+    Перегородки
+
+    Для производства мебели и интерьера
+    Стеклянные двери и предметы интерьера
+
+
+    ________________________________
+    Почему мы?
+    Отличные цены
+    Мы - производители. Это обеспечивает низкие цены на продукцию.
+
+    Сроки
+    Мы производим изделия в срок от 1 до 7 рабочих дней (в зависимости от вида изделий)
+
+    Качество
+    В производстве мы используем только стекло и зеркало наивысшего качества
+
+    Система скидок
+    Для постоянных заказчиков у нас индивидуальные условия и система скидок.
+
+    _______________________________        
+
+    Как мы работаем
+
+    Вы оставляете заявку на сайте или звоните нам
+
+    Наш менеджер связывается с Вами и уточняет подробности заказа
+
+    Мы составляем коммерческое предложение и отправляем его Вам
+
+    Вы вносите оплату. Мы приступаем к изготовлению заказа
+
+    Мы изготавливаем стекло наилучшего качества
+
+    Вы остаетесь довольны и обращаетесь к нам снова
+    ___________________
+
+
+    Низкие цены
+    Низкие цены
+    Скидки постоянным клиентам
+
+    Квалифицированные мастера
+
+    Квалифицированные мастера
+    Высокое качество
+
+    ______________
+
+    Производство закаленного стекла 4-19 мм для фасадов, 
+    стеклопакетов, перегородок, стеклянной мебели и торгового оборудования.
+
+    __________________
+
+    Производство и монтаж
+    изделий из стекла
+    Компания Мосстеклопром представляет продукцию из стекла
+    собственного производства. Мы производим широкий
+    ассортимент изделий – от простого стекла, армированного
+    и закаленного до зеркал и душевых кабин.
+
+    Наши специалисты, прошедшие подготовку в компании Bohle имеют
+    богатый опыт с 2005 года. Наше высокотехнологичное
+    производство применяет самые современные методы, например,
+    сегментированную алмазную обработку и твердосплавную
+    резку.
+
+    Кроме того, мы работаем качественно и быстро, например, резка
+    стекла может составлять всего 15 минут. И при этом даем
+    Письменную гарантию качества.
+
+    Наша компания всегда готова пойти навстречу своему заказчику
+    в любых вопросах, от простой скидки до персонального прайса
+    постоянным заказчикам, а так же в вопросах доставки, помощи
+    в выборе и многих других…
+
+    ________________________________________
+    из дом гласс
+    Стекольный завод приглашает к сотрудничеству:
+    стеклянные конструкции (двери, перегородки)Компании, которые устанавливают стеклянные конструкции (двери, перегородки, душевые)
+    Строительные организацииСтроительные организации
+    Архитекторов дизайнеровАрхитекторов дизайнеров
+    Студии, производителей мебелиСтудии, производителей мебели
+    ________________________
+    Вам удобно с нами работать:
+    Современный стекольный завод - обработка стекла оптимальные цены
+    Грамотная консультация и быстрое оформление заявки
+
+    Современный стекольный завод - обработка стекла оптимальные цены
+    Предоставление индивидуальных условий сотрудничества
+
+    Современный стекольный завод - обработка стекла оптимальные цены
+    Высококачественное исполнение заказа на заводе
+
+    Современный стекольный завод - обработка стекла оптимальные цены
+    Получение заказа на объекте в назначенное вами время
+    __________________________
+    Преимущества стекольной
+    компании Glass Store
+    Мы обрабатываем стекло, наделяя его уникальными свойствами, 
+    для мебельных фабрик, дизайнерских и ремонтных фирм, для всех, 
+    кто занимается монтажом и сборкой готовых изделий и нуждается в услугах
+    изготовления стекольных элементов по заданным размерам. Используем различные 
+    способы обработки в декорировании продукции и расширяем сферы ее применения.
+    Работая с проектом, за вами закреплен личный менеджер, осуществляется быстрый
+    расчет, на эл.почту отправляется автоматический отчет по каждому этапу производства,
+    соблюдая все индивидуальные пожелания.
+
+    Glass-Store - обладатель необходимых сертификатов, подтверждающих качество
+    продукции и позволяющих проводить те или иные виды работ для заказчиков.
+
+    ___________________________
+
+    Ведущий московский стекольный завод Glass-Store предлагает:
+    изготовление стеклоизделий в широком ассортименте по индивидуальным размерам для таких конструкций, как душевые, ограждения, козырьки, витрины, перегородки, двери, фасады, лестницы и прочее;
+    обработку стекла: резку, сверление, полировку, обработку кромок, закаливание, ламинирование, гравировку, фотопечать, покраску, матирование, изготовление стемалита, фацетирование, нанесения пленок;
+    бесперебойные поставки продукции высокого качества;
+    гибкую ценовую политику;
+    индивидуальные условия сотрудничества;
+    четкое выполнение договорных обязательств;
+    доставку готовых изделий до объекта 24/7 в удобное для вас время.
+    Всегда уведомляем о ходе производственного процесса вашего проекта.
+    ______________________________
+    Почему Glass Store?
+    Крупный столичный стекольный завод Glass-Store организовал широкий спектр услуг,
+    выпуская большой ассортимент продукции из листового (Float) стекла и его разновидностей
+    - закаленного, осветленного, матированного, цветного, стемалита, сатината,
+    ламинированного (триплекс). В процессе обработки применяется высокоточное 
+    оборудование европейского производства, современные технологии и материалы, 
+    за счет которых создаются прочные и красивые изделия.
+
+    Мы - производители. Налаженное собственное производство площадью 8000 кв.м 
+    позволяет не просто шагать в ногу со временем, а опережать его.
+
+    Качество и дизайн. Современное обрабатывающее оборудование позволяет уверенно 
+    заявить о прочности и красоте изделий, полностью соответствующей технической документации.
+
+    Точно в срок. Мы гарантируем оперативное исполнение заказа и необходимую доставку
+    в точно оговоренный срок.
+    ____________________________________________
+
+
+    Обработка стекла и зеркал
+    Наша компания «Технопарк» представляет собой крупнейший центр по обработке стекла и
+    зеркал в Москве и Московской области. Мы располагаем собственным современным промышленным
+    оборудованием и производственными мощностями, поэтому готовы предложить Вам полный комплекс услуг в одном месте.
+
+    Далее идут картинки
+    ____________________
+
+    <div class="container">
+        <div class="news container-fluid my-4">
+
+            <div class="row text-center my-5">
+                <div class="col">Новостной блок (присутствует если есть новости)</div>
             </div>
 
+            <div class="row text-center px-5">
+                <!-- Блок объявления. начало-->
+                <?php if (!empty($news)) { ?>
+                    <?php foreach ($news as $value) { ?>
+                        <div class="col-6 text-center py-2">
+                            <h4><strong><?= $value['title'] ?></strong></h4>
+                            <div class="container">
+                                <p><?= $value['short_text'] ?></p>
+                            </div>
+                        </div>
+                    <?php } ?>
 
-            <div  class="parallax3">
+                    <div class="col-12 text-center align-self-end pt-2">
+                        <?php $options = ['style' => ['color' => '#888']]; ?>
+                        <?= Html::a('подробнее <i class="fa fa-angle-double-right" aria-hidden="true"></i>', ['#'], $options) ?>
+                    </div>                 
+                <?php } ?>
+                <!-- Блок объявления. конец-->
             </div>
-            <div class="row paralax3-content text-center">
-                <div class="col-12 px-2">
-                    <strong>Линия Busetti F серии для двусторонней обработки кромки.</strong>                
-                </div>
-            </div>
+        </div>
+    </div>
 
-            <div class="row text-center" id="servise1">
-                <div class="col-12 my-5"><h2>Продукция</h2></div>
-            </div>
+    <div class="container">
+        <div class="row text-center my-5">
+            <div class="col">Блок с акциями(присутствует если они есть)</div>
+        </div>
 
-            <div class="container-fluid  my-background-col">
-                <div class="container">
-                    <div class="row justify-content-center py-5">
-                        <?php
-                        foreach ($services_1 as $value) {
+        <div class="row justify-content-center" >
 
-                            echo CardWidget::widget([
-                                'sitePage' => $value['sitePage'],
-                                'title' => $value['title'],
-                                'description' => $value['description'],
-                                'imagePath' => $value['imagePath'],
-                            ]);
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container my-5">
-                <div class="block-3px mt-4"></div>
-            </div>
-
-            <div class="row text-center" id="servise2">
-                <div class="col-12 my-5"><h2>Услуги</h2></div>
-            </div>
-
-            <div class="container-fluid  my-background-col">
-                <div class="container">
-                    <div class="row justify-content-center py-5">
-                        <?php
-                        foreach ($services_2 as $value) {
-
-                            echo CardWidget::widget([
-                                'sitePage' => $value['sitePage'],
-                                'title' => $value['title'],
-                                'description' => $value['description'],
-                                'imagePath' => $value['imagePath'],
-                            ]);
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container my-5">
-                <div class="block-3px mt-4"></div>
-            </div>
-
-            <div class="container">
-                <div class="row text-center my-5">
-                    <div class="col">Блок с акциями(присутствует если они есть)</div>
-                </div>
-
-                <div class="row justify-content-center" >
-
-                    <?php $i = 0 ?> <!-- организация счетчика акций, покажем только 3 последние-->
-                    <?php foreach ($promotions as $value) { ?>
-                        <div class="col-12 col-xl-4 my-2">
-                            <div class="shadow bg-white rounded wrapper-card mx-auto">
-                                <div class="wrapper-card-top">
-                                    <div class="wrapper-card-img">
-                                        <?php if (!empty($value['imagePath'])) { ?>
-                                            <img src="<?= Url::to('@web/uploads/promotions/' . $value['imagePath']) ?>" alt="картинка к акции"  
-                                                 style="width: 100%;">
-                                             <?php } else { ?>
-                                            <img src="<?= Url::to('@web/images/noImage.jpg') ?>" alt="картинка к акции"  
-                                                 style="width: 100%;">
-                                             <?php } ?>
-                                    </div> 
-                                    <div class="wrapper-card-data text-right pr-2">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        <span><strong>с <?= $value['dateStart'] ?> по <?= $value['dateEnd'] ?></strong></span> 
-                                    </div>
-                                </div>
-
-                                <div class="text-center wrapper-card-content">
-                                    <h6 class="my-2" style="color: #79A62F;"><?= mb_strtoupper($value['title'], 'UTF-8') ?></h6>
-                                    <p class="my-1"><i><?= nl2br($value['short_text']) ?></i></p>
-                                </div>
-                            </div>  
-                            <div class="text-center align-self-end pt-2">
-                                <?php $options = ['style' => ['color' => '#888']]; ?>
-                                <?= Html::a('подробнее <i class="fa fa-angle-double-right" aria-hidden="true"></i>', ['promotion', 'id' => $value['id']], $options) ?>
+            <?php $i = 0 ?> <!-- организация счетчика акций, покажем только 3 последние-->
+            <?php foreach ($promotions as $value) { ?>
+                <div class="col-12 col-xl-4 my-2">
+                    <div class="shadow bg-white rounded wrapper-card mx-auto">
+                        <div class="wrapper-card-top">
+                            <div class="wrapper-card-img">
+                                <?php if (!empty($value['imagePath'])) { ?>
+                                    <img src="<?= Url::to('@web/uploads/promotions/' . $value['imagePath']) ?>" alt="картинка к акции"  
+                                         style="width: 100%;">
+                                     <?php } else { ?>
+                                    <img src="<?= Url::to('@web/images/noImage.jpg') ?>" alt="картинка к акции"  
+                                         style="width: 100%;">
+                                     <?php } ?>
+                            </div> 
+                            <div class="wrapper-card-data text-right pr-2">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <span><strong>с <?= $value['dateStart'] ?> по <?= $value['dateEnd'] ?></strong></span> 
                             </div>
                         </div>
 
-                        <?php
-                        $i++;
-                        if ($i === 3)
-                            break;
-                    }
-                    ?>
+                        <div class="text-center wrapper-card-content">
+                            <h6 class="my-2" style="color: #79A62F;"><?= mb_strtoupper($value['title'], 'UTF-8') ?></h6>
+                            <p class="my-1"><i><?= nl2br($value['short_text']) ?></i></p>
+                        </div>
+                    </div>  
+                    <div class="text-center align-self-end pt-2">
+                        <?php $options = ['style' => ['color' => '#888']]; ?>
+                        <?= Html::a('подробнее <i class="fa fa-angle-double-right" aria-hidden="true"></i>', ['promotion', 'id' => $value['id']], $options) ?>
+                    </div>
                 </div>
 
-                <div class="container my-5">
-                    <div class="block-3px mt-4"></div>
-                </div>
-
-            </div>
+                <?php
+                $i++;
+                if ($i === 3)
+                    break;
+            }
+            ?>
         </div>
+
+    </div>
+</div>
