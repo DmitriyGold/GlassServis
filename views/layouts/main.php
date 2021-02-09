@@ -37,6 +37,7 @@ AppAsset::register($this);
               rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
     </head>
     <body>
         <?php $this->beginBody() ?>
@@ -89,11 +90,11 @@ AppAsset::register($this);
                 ])
                 ?>
                 <?= Alert::widget() ?>             
-                       
-                <?=  $content ?>
+
+                <?= $content ?>
             </div>
         </div>
-        
+
         <footer class="footer">
             <div class="container-fluid">
                 <div class="row p-2 text-center">
@@ -125,7 +126,7 @@ AppAsset::register($this);
                             <div class="colpy-2">
                                 <div class="row">
                                     <div class="col col-lg-8 block-phone">
-                                         <?= $main[1][text] ?>, <?= $main[2][text] ?>
+                                        <?= $main[1][text] ?>, <?= $main[2][text] ?>
                                     </div>
                                     <div class="col col-lg-4">
                                         <a href="<?= Url::to(['#']); ?>">
@@ -162,10 +163,15 @@ AppAsset::register($this);
         </footer>
 
         <?php $this->endBody() ?>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+        </script>
+        <script src="<?= Url::to('@web/js/common.js'); ?>">
+        </script>
     </body>
+    
 </html>
 <?php $this->endPage() ?>

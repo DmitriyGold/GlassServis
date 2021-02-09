@@ -6,6 +6,10 @@ $this->title = 'Гласс Сервис';
 use yii\helpers\Html;
 use yii\helpers\Url;
 use app\widgets\CardWidget;
+
+
+use phpnt\animateCss\AnimateCssAsset;
+AnimateCssAsset::register($this);
 ?>
 
 <div class="site-index">
@@ -35,8 +39,8 @@ use app\widgets\CardWidget;
 
         <div class="container my-5">
             <div class="row  justify-content-center text-center">
-                <div class="col-12 caption-2">
-                    <div class="">ИЗГОТАВЛИВАЕМ СТЕКЛОИЗДЕЛИЯ ЛЮБОЙ СЛОЖНОСТИ ПОД ЗАКАЗ</div>
+                <div class="col-12 my-h1">
+                    <div class="animate__animated animate__backInRight" style="animation-duration: 4s;">Изготавливаем стеклоизделия любой сложности под заказ</div>
                 </div>
             </div>
 
@@ -49,15 +53,15 @@ use app\widgets\CardWidget;
                     </ul>
                 </div>
             </div>
-        </div>
-
+        </div>   
+        
 <div class="text1 d-none">Hover me</div>
       
 
         <div class="my-background-col my-5 pt-5">
             <div class="row  justify-content-center text-center">
-                <div class="col-12 caption-2">
-                    <div class="text-big">Собственное производство на территории <br>стекольного гиганта 
+                <div class="col-12">
+                    <div class="my-h1">Собственное производство на территории <br>стекольного гиганта 
                         <img src="<?= Url::to('@web/images/AGС_logo.png'); ?>" width="73px;" alt="#">  
                     </div>
                 </div>

@@ -4,14 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5670615df9945cac67a29fb0dde04983",
+    "content-hash": "c3d1821396f2dfe5d0e88ff6c2657da4",
     "packages": [
+        {
+            "name": "bower-asset/animate.css",
+            "version": "v4.1.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:daneden/animate.css.git",
+                "reference": "4aa415199dd4ed7d877d10343e745e8bbb4b7a0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/daneden/animate.css/zipball/4aa415199dd4ed7d877d10343e745e8bbb4b7a0c",
+                "reference": "4aa415199dd4ed7d877d10343e745e8bbb4b7a0c"
+            },
+            "type": "bower-asset"
+        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
+                "url": "git@github.com:twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -507,6 +522,52 @@
             "license": [
                 "MIT"
             ]
+        },
+        {
+            "name": "phpnt/animate-css",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpnt/animate-css.git",
+                "reference": "e77d6b46a6ec2626c1e3ff394fd882900ff81c1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpnt/animate-css/zipball/e77d6b46a6ec2626c1e3ff394fd882900ff81c1f",
+                "reference": "e77d6b46a6ec2626c1e3ff394fd882900ff81c1f",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/animate.css": ">=3.7.2",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "phpnt\\animateCss\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "phpNT",
+                    "email": "phpnt@phpnt.com",
+                    "homepage": "http://phpnt.com"
+                }
+            ],
+            "description": "Yii2 Animate CSS Asset",
+            "keywords": [
+                "animate",
+                "css",
+                "phpnt",
+                "widget",
+                "yii2"
+            ],
+            "time": "2019-07-19T01:02:25+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

@@ -28,7 +28,7 @@ class AppAsset extends AssetBundle {
         'css/decor.css',
     ];
     public $js = [
-        'js/index.js',
+
     ];
     public $depends = [
         'yii\web\YiiAsset',
