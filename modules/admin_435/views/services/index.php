@@ -18,11 +18,12 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
 
-     <?= GridView::widget([
+    <?=
+    GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-            //'sitePage',
+            //['class' => 'yii\grid\SerialColumn'],
+            'id',
             'title',
             'description',
             //'imagePath',
@@ -32,7 +33,13 @@ $this->params['breadcrumbs'][] = $this->title;
             //'detailed_text2:ntext',
             //'subtitle_3',
             //'detailed_text3:ntext',
-            //'sort',
+            [
+                'attribute' => 'sort',
+                'label' => 'продукция',
+                'value' => function($data) {
+                    return $data->getHide2();
+                }
+            ],
             [
                 'attribute' => 'hide',
                 'label' => 'скрыть',
@@ -54,11 +61,20 @@ $this->params['breadcrumbs'][] = $this->title;
                         return Html::a(
                                         '<span class="p-1"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>', $url);
                     },
-
+                    'delete' => function ($url, $model) {
+                        return Html::a(
+                                        '<span class="p-1"><i class="fa fa-trash-o" aria-hidden="true"></i></span>', $url, ['title' => 'Удалить',
+                                    'aria-label' => 'Удалить',
+                                    'data-pjax' => '0',
+                                    'data-confirm' => 'Вы уверены, что хотите удалить этот элемент?',
+                                    'data-method' => 'post'
+                        ]);
+                    },
                 ],
             ],
         ],
-    ]); ?>
+    ]);
+    ?>
 
 
 </div>

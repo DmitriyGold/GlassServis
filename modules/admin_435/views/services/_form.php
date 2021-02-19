@@ -10,7 +10,7 @@ use yii\widgets\ActiveForm;
 
 <div class="services-form">
 
-  
+
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
@@ -30,6 +30,15 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'detailed_text3')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'hide')->checkbox() ?>
+
+    <div class="col-3">
+        <?=
+        $form->field($model, 'sort')->dropDownList([
+            '1' => 'да',
+            '2' => 'нет',
+        ])
+        ?> 
+    </div>
 
     <div class="row">
         <div class="col">

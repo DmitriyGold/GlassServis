@@ -18,14 +18,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Изменить', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
     </p>
-    
-        <p>  <?= Html::a('к списку', ['index', 'id' => $model->id], ['class' => 'btn btn-primary']) ?></p>  
 
-    <?= DetailView::widget([
+    <p>  <?= Html::a('к списку', ['index', 'id' => $model->id], ['class' => 'btn btn-primary']) ?></p>  
+
+    <?=
+    DetailView::widget([
         'model' => $model,
         'attributes' => [
-           // 'id',
-           // 'sitePage',
+            // 'id',
+            // 'sitePage',
             'title',
             'description',
             //'imagePath',
@@ -35,7 +36,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'detailed_text2:ntext',
             'subtitle_3',
             'detailed_text3:ntext',
-           // 'sort',
+            'sort' => [
+                'format' => 'html', //  свой вывод
+                'label' => 'продукция',
+                'value' => function($data) {
+                    return $data->getHide2();
+                }
+            ],
             'hide' => [
                 'format' => 'html', //  свой вывод
                 'label' => 'скрыть',
@@ -44,6 +51,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
             ],
         ],
-    ]) ?>
+    ])
+    ?>
 
 </div>

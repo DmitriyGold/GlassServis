@@ -57,7 +57,7 @@ class Services extends \yii\db\ActiveRecord {
             'detailed_text2' => 'текст 2',
             'subtitle_3' => 'подзаголовок 3',
             'detailed_text3' => 'текст 3',
-            'sort' => 'Sort',
+            'sort' => 'продукция',
             'hide' => 'скрыть',
         ];
     }
@@ -65,6 +65,11 @@ class Services extends \yii\db\ActiveRecord {
     public function getHide() {
 
         return ($this->hide) ? 'да' : '';
+    }
+
+    public function getHide2() {
+
+        return ($this->sort == 1) ? 'да' : '';
     }
 
 }

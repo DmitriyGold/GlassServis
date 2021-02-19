@@ -1,8 +1,8 @@
 @font-size1: 14px;
 @font-size2: 20px;
 @font-size3: 24px;
-@font-size4: 40px;
-@font-size5: 32px;
+@font-size4: 32px;
+@font-size5: 40px;
 @font-size6: 64px;
 
 @color-1: #CCCCCC; // серый
@@ -25,6 +25,7 @@
 html,
 body {
     height: 100%;
+    font-family: @font2-family;
 }
 
 .img-card {
@@ -85,12 +86,12 @@ body {
 /* заголовок текста, страницы*/
 .caption-1 {
     .caption_block();
-    font-size:  @font-size4;
+    font-size:  @font-size5;
 }
 
 .caption-2 {
     .caption_block();
-    font-size:  @font-size5;
+    font-size:  @font-size4;
 }
 
 .caption-3 {
@@ -183,17 +184,17 @@ body {
         font-size:  @font-size6;
     }
     .cont-center {
-        font-size:  @font-size4;
+        font-size:  @font-size5;
     }
     .cont-bottom {
-        font-size:  @font-size5;
+        font-size:  @font-size4;
         text-shadow: 1px 1px 2px black, 0 0 1em red; /* Параметры тени */
     }
 }
 
 .paralax2-content {
     margin-top: -140px;
-    font-size: @font-size5;
+    font-size: @font-size4;
     background-color: transparent;
     font-family: @font1-family;
     color: @color-3;
@@ -206,7 +207,7 @@ body {
 
 .paralax3-content {
     margin-top: -140px;
-    font-size: @font-size4;
+    font-size: @font-size5;
     background-color: transparent;
     font-family: @font1-family;
     color: @color-3;
@@ -215,7 +216,7 @@ body {
 }
 
 .my-h1 {
-    font-size: @font-size4;
+    font-size: @font-size5;
 }
 
 .my-h2 {
@@ -244,6 +245,8 @@ body {
     background-color: #eee;
 }
 
+
+/* Карточки продукции и услуг на основном экране -->*/
 .small-box-1 {
     //width: 100%;
     max-height: 500px;
@@ -263,9 +266,44 @@ body {
         opacity: 0.9;
     }
     &:hover  .card-content-services{
-        padding-top:  70px; /* Some padding */
+        padding-top:  50px; /* Some padding */
         height: 97%;
     }
+    .card-title {
+        font-size: @font-size4;
+        text-shadow: 1px 1px 2px @color-2, 0 0 1em #FFF; /* Параметры тени */
+    }
+    .card-description {
+        font-size: @font-size3;
+        color: yellow;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-shadow: 1px 1px 2px black, 0 0 1em #FFF; /* Параметры тени */
+    }
+    @media (max-width: 991px) {
+        .card-title {
+            font-size: @font-size3;
+        }
+        .card-description {
+            font-size: @font-size1;
+        }
+        &:hover  .card-content-services{
+            padding-top:  10px; /* Some padding */
+        }
+    }
+    @media (max-width: 767px) {
+        .card-title {
+            font-size: @font-size3;
+        }
+        .card-description {
+            font-size: @font-size2;
+        }
+        &:hover  .card-content-services{
+            padding-top:  50px; /* Some padding */
+        }
+    }
+
+
 }
 
 .card-content-services {
@@ -278,12 +316,12 @@ body {
     width: 100%; /* Full width */
 
     padding-top:  10px; /* Some padding */
-    padding-bottom:  40px; /* Some padding */
+    padding-bottom:  50px; /* Some padding */
     transition: 0.8s ease;
     overflow: hidden;
     height: 0;
 }
-
+/* <-- Карточки продукции и услуг на основном экране */
 
 .block-text1 {
     color: @color-2;
@@ -387,7 +425,7 @@ a.desc:after {
 @media (max-width: 1300px) {
     .top-content {
         .cont-top {
-            font-size:  @font-size4;
+            font-size:  @font-size5;
         }
         .cont-center {
             font-size:  @font-size3;
@@ -409,7 +447,7 @@ a.desc:after {
         }
     }
     .paralax3-content {
-        font-size: @font-size5;
+        font-size: @font-size4;
     }
     .top-content {
         margin-top: -330px;

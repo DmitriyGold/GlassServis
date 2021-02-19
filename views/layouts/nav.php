@@ -16,28 +16,19 @@ use yii\helpers\Url;
 
         <div class="dropdown  mx-2">                                    
             <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
-               aria-haspopup="true" aria-expanded="false">Продукция 
+               aria-haspopup="true" aria-expanded="false">Услуги 
             </a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Закаленное стекло</a>
-                <a class="dropdown-item" href="#">Пожаростойкое стекло</a>
-            </div>
-        </div>
-        <div class="dropdown mx-2">                                    
-            <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
-               aria-haspopup="true" aria-expanded="false">Услуги</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Резка стекла</a>
-                <a class="dropdown-item" href="#">Обработка кромки стекла</a>
-                <a class="dropdown-item" href="#">Технологические вырезы в стекле</a>
-                <a class="dropdown-item" href="#">Сверление отверстий / зенковка</a>
                 <a class="dropdown-item" href="#">Закалка стекла</a>
-                <a class="dropdown-item" href="#">Фацет</a>
+                <a class="dropdown-item" href="#">Обработка кромки</a>
+                <a class="dropdown-item" href="#">Технологические вырезы</a>
+                <a class="dropdown-item" href="#">Сверление отверстий</a>
+                <a class="dropdown-item" href="#">Резка стекла</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Доставка</a>
             </div>
         </div>
-        <a class="nav-item nav-link  mx-2" href="<?= Url::to(['/site/my_contact']);?>">Контакты</a>
+        <a class="nav-item nav-link  mx-2" href="<?= Url::to(['/site/my_contact']); ?>">Контакты</a>
     </div>
 </div>
 </nav>

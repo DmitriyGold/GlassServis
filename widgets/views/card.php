@@ -9,17 +9,17 @@ use yii\helpers\Url;
 
             <?php if (isset($sitePage)) { ?>
                 <a href="<?= Url::to(["$sitePage"]); ?>"> 
-                    <img src="<?= Url::to("$imagePath") ?>" alt="">                                      
+                    <img src="<?= Url::to("$imagePath") ?>" alt="стеклопродукция">                                      
                     <div class="card-content-services">
-                        <h4 class="pb-2"><?= $title ?></h4>
-                        <p class="px-1"><?= $description ?></p> 
+                        <p class="card-title"><?= $title ?><p>
+                        <p class="card-description"><?= $description ?></p> 
                     </div> 
                 </a> 
             <?php } else { ?>
-                <img src="<?= Url::to("$imagePath") ?>" alt="">                                      
+                <img src="<?= Url::to("$imagePath") ?>" alt="стеклопродукция">                                      
                 <div class="card-content-services">
-                    <h4 class="pb-2"><?= $title ?></h4>
-                    <p class="px-1"><?= $description ?></p> 
+                        <p class="card-title"><?= $title ?><p>
+                        <p class="card-description"><?= $description ?></p> 
                 </div> 
             <?php } ?>
         </div>                    

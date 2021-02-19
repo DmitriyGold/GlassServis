@@ -53,4 +53,38 @@
   width: 20px;
   height: 100%;
 }
+.wrap-svg {
+  width: 100px;
+  border-radius: 50px 50px;
+  border: 2px solid #00BCB2;
+  /* Параметры рамки */
+}
+.wrap-svg2 {
+  width: 150px;
+  height: 165px;
+}
+.block-svg1 .cls-1 {
+  fill: #ccc;
+}
+.block-svg1 .cls-2 {
+  fill: #00BCB2;
+}
+.block-svg1 .cls-3 {
+  fill: #eee;
+}
+.block-svg2 .cls-1 {
+  fill: #00BCB2;
+}
+.block-svg2 .cls-2 {
+  fill: #ccc;
+}
+.block-svg3 .cls-1 {
+  fill: #00BCB2;
+}
+.block-svg3 .cls-2 {
+  fill: #ddd;
+}
+.block-svg3 .cls-3 {
+  fill: #aaa;
+}
 /*# sourceMappingURL=decor.css.map */

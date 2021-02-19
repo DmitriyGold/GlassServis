@@ -9,6 +9,7 @@
 html,
 body {
   height: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 .img-card {
   width: 200px;
@@ -221,6 +222,7 @@ body {
 .my-background-col {
   background-color: #eee;
 }
+/* Карточки продукции и услуг на основном экране -->*/
 .small-box-1 {
   max-height: 500px;
   margin: auto;
@@ -239,9 +241,46 @@ body {
   opacity: 0.9;
 }
 .main-card-services:hover .card-content-services {
-  padding-top: 70px;
+  padding-top: 50px;
   /* Some padding */
   height: 97%;
+}
+.main-card-services .card-title {
+  font-size: 32px;
+  text-shadow: 1px 1px 2px #00BCB2, 0 0 1em #FFF;
+  /* Параметры тени */
+}
+.main-card-services .card-description {
+  font-size: 24px;
+  color: yellow;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-shadow: 1px 1px 2px black, 0 0 1em #FFF;
+  /* Параметры тени */
+}
+@media (max-width: 991px) {
+  .main-card-services .card-title {
+    font-size: 24px;
+  }
+  .main-card-services .card-description {
+    font-size: 14px;
+  }
+  .main-card-services:hover .card-content-services {
+    padding-top: 10px;
+    /* Some padding */
+  }
+}
+@media (max-width: 767px) {
+  .main-card-services .card-title {
+    font-size: 24px;
+  }
+  .main-card-services .card-description {
+    font-size: 20px;
+  }
+  .main-card-services:hover .card-content-services {
+    padding-top: 50px;
+    /* Some padding */
+  }
 }
 .card-content-services {
   position: absolute;
@@ -257,12 +296,13 @@ body {
   /* Full width */
   padding-top: 10px;
   /* Some padding */
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   /* Some padding */
   transition: 0.8s ease;
   overflow: hidden;
   height: 0;
 }
+/* <-- Карточки продукции и услуг на основном экране */
 .block-text1 {
   color: #00BCB2;
   font-weight: 600;

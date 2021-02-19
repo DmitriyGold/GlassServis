@@ -25,7 +25,7 @@ class Promotions extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'Promotions';
+        return 'promotions';
     }
 
     /**

@@ -6,7 +6,9 @@ use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use app\widgets\ImgWidget;
 use app\widgets\Img_fullWidget;
+use phpnt\animateCss\AnimateCssAsset;
 
+AnimateCssAsset::register($this);
 $this->title = 'О нас';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -41,10 +43,10 @@ $this->title = 'О нас';
             <div class="container my-5">
                 <div class="row">
                     <div class="col  text-center">
-                        Производственная площадка <strong>OOO «Гласс Сервис»</strong> размещена в подмосковном городе Клин на территории 
-                        стекольного завода <strong>AGC</strong>, одного из мировых лидеров производителей листового float-стекла.
-                        Территориальное соседство с японским концерном позволяет нам выполнять любые объемные 
-                        заказы точно всрок и по ценам ниже средних.
+                        Производственная площадка <strong>OOO «Гласс Сервис»</strong> размещена в подмосковном городе Клин рядом
+                        со стекольным заводом <img src="<?= Url::to('@web/images/AGС_logo.png'); ?>" width="73px;" alt="#">, одного из мировых лидеров производителей листового float-стекла.
+                        Территориальное соседство с передовым концерном позволяет нам выполнять любые объемные 
+                        заказы точно в назначенный срок и по приемлимым для клиентов ценам.
                     </div>
                 </div>                
             </div>
@@ -52,7 +54,7 @@ $this->title = 'О нас';
             <div class="container my-5">
                 <div class="row">
                     <div class="col-12 col-lg-4 caption-2">
-                        <div class="">МЫ ПРЕДЛАГАЕМ:</div>
+                        <div class="animate__animated animate__heartBeat wow">МЫ ПРЕДЛАГАЕМ:</div>
                     </div>
                     <div class="col-12 col-lg-7 line-bottom-1">              
                     </div>
@@ -62,7 +64,7 @@ $this->title = 'О нас';
             <div class="row justify-content-around align-self-center mb-5">
                 <div class="col-11 col-lg-3 shadow2 text-center">
                     <strong>полный цикл промышленной переработки листового стекла:</strong><br>
-                    резка, обработка кромки, сверление отверстий, зенковка, выпил  в стекле технологических отверстий
+                    резка, обработка кромки прямых и фигурных изделий, сверление отверстий, зенковка, выпилы  в стекле технологических отверстий
                 </div>
                 <div class="col-11 col-lg-3 shadow2 text-center pt-2">
                     производство 
@@ -78,7 +80,7 @@ $this->title = 'О нас';
 
                 <div class="row">
                     <div class="col-12 col-lg-7 caption-2">
-                        <div class="">ПАРК НАШЕГО ОБОРУДОВАНИЯ:</div>
+                        <div class="animate__animated animate__heartBeat wow">ПАРК НАШЕГО ОБОРУДОВАНИЯ:</div>
                     </div>
                     <div class="col-12 col-lg-4 line-bottom-1">              
                     </div>
@@ -136,7 +138,7 @@ $this->title = 'О нас';
             <div class="container my-5">
                 <div class="row text-center mt-5">
                     <div class="col">
-                        Закалка и моллирование стекла осуществляется на высокопроизводительной печи North Glass.                        
+                        Закалка стекла осуществляется на высокопроизводительной печи North Glass.                        
                     </div>
                 </div> 
             </div>
