@@ -5,14 +5,14 @@ namespace app\modules\admin_435\controllers;
 use Yii;
 use app\models\db\Services;
 use yii\data\ActiveDataProvider;
-use yii\web\Controller;
+use yii\web\admin_435\AppAdminController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
  * ServicesController implements the CRUD actions for Services model.
  */
-class ServicesController extends Controller
+class ServicesController extends AppAdminController
 {
     /**
      * {@inheritdoc}

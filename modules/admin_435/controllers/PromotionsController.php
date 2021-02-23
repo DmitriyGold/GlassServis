@@ -5,7 +5,7 @@ namespace app\modules\admin_435\controllers;
 use Yii;
 use app\models\db\Promotions;
 use yii\data\ActiveDataProvider;
-use yii\web\Controller;
+use yii\web\admin_435\AppAdminController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use app\models\ImageUpload;
@@ -14,7 +14,7 @@ use yii\web\UploadedFile;
 /**
  * PromotionsController implements the CRUD actions for Promotions model.
  */
-class PromotionsController extends Controller
+class PromotionsController extends AppAdminController
 {
     /**
      * {@inheritdoc}

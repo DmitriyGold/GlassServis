@@ -5,7 +5,7 @@ namespace app\modules\admin_435\controllers;
 use Yii;
 use app\models\db\News;
 use yii\data\ActiveDataProvider;
-use yii\web\Controller;
+use yii\web\admin_435\AppAdminController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use app\models\ImageUpload;
@@ -14,7 +14,7 @@ use yii\web\UploadedFile;
 /**
  * NewsController implements the CRUD actions for News model.
  */
-class NewsController extends Controller {
+class NewsController extends AppAdminController {
 
     /**
      * {@inheritdoc}

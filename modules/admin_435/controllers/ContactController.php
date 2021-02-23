@@ -5,7 +5,7 @@ namespace app\modules\admin_435\controllers;
 use Yii;
 use app\models\db\Contact;
 use yii\data\ActiveDataProvider;
-use yii\web\Controller;
+use yii\web\admin_435\AppAdminController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -13,7 +13,7 @@ use yii\filters\VerbFilter;
 /**
  * ContactController implements the CRUD actions for Contact model.
  */
-class ContactController extends Controller {
+class ContactController extends AppAdminController {
 
     /**
      * {@inheritdoc}
