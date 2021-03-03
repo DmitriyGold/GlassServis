@@ -14,11 +14,17 @@ use yii\helpers\Url;
 
         <a class="nav-item nav-link  mx-2" href="<?= Url::to(['/site/about']); ?>">О компании</a>
 
-        <div class="dropdown  mx-2">                                    
-            <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
-               aria-haspopup="true" aria-expanded="false">Услуги 
+        <!--<div class="<"dropdown  mx-2">                                    -->
+        <div class="mx-2">           
+             
+              <!--dropdown-toggle-->
+
+            <a class="nav-item nav-link"  href="<?= Url::to(['/site/index#service']) ?>" 
+               role="button" 
+               aria-haspopup="true" aria-expanded="false">Услуги
             </a>
-            <div class="dropdown-menu">
+              
+          <!--  <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Закалка стекла</a>
                 <a class="dropdown-item" href="#">Обработка кромки</a>
                 <a class="dropdown-item" href="#">Технологические вырезы</a>
@@ -26,7 +32,7 @@ use yii\helpers\Url;
                 <a class="dropdown-item" href="#">Резка стекла</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Доставка</a>
-            </div>
+            </div> -->
         </div>
         <a class="nav-item nav-link  mx-2" href="<?= Url::to(['/site/my_contact']); ?>">Контакты</a>
     </div>

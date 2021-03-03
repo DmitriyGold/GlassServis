@@ -10,7 +10,7 @@ $this->title = 'Контакты';
 <div class="container-fluid">
     <div class="border"></div>
 
-    <div class="site-contact mt-5">
+    <div class="site-contact">
 
         <div class="container my-5">
             <div class="row">

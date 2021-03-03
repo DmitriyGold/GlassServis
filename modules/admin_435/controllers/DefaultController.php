@@ -2,12 +2,12 @@
 
 namespace app\modules\admin_435\controllers;
 
-use yii\web\admin_435\AppAdminController;
+use yii\web\Controller;
 
 /**
  * Default controller for the `admin_435` module
  */
-class DefaultController extends AppAdminController
+class DefaultController extends Controller
 {
     /**
      * Renders the index view for the module

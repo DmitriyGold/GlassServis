@@ -29,6 +29,10 @@ AnimateCssAsset::register($this);
         <div class="container my-5">
             <div class="row justify-content-center text-center">
                 <div class="col-11">
+                    <?php
+                    app\controllers\debug(yii::$app->user->identity);
+                    ?>
+                    
                     <p>САЙТ на стадии разработки. (для корректного отображения страницы перед началом просмотра сбросьте историю браузера)</p>
                 </div>
             </div>
@@ -177,7 +181,11 @@ AnimateCssAsset::register($this);
         <div  class="parallax2">
         </div>
 
-        <div class="row justify-content-center text-center">
+        
+        <!--                     УСЛУГИ                            -->
+        
+        
+        <div class="row justify-content-center text-center"  id="service" >
             <div class="caption-w">
                 <div class="col-12 caption-3 my-margin-1">
                     <div class="">НАШИ УСЛУГИ:</div>
@@ -185,7 +193,7 @@ AnimateCssAsset::register($this);
             </div>
         </div>
 
-        <div class="container mt-4 mb-5">
+        <div class="container mt-4 mb-5" >
             <div class="row justify-content-center text-center">
                 <div class="col-12 h2">
                     <div class="animate__animated animate__rubberBand wow" style="animation-duration: 2s;">
@@ -263,7 +271,7 @@ AnimateCssAsset::register($this);
         </div>
     </div>
 
-    <div class="container-fluid my-5 px-5">
+    <div class="container-fluid my-5 px-5" >
         <div class="row text-center">
             <div class="col-12 col-lg-3 caption-2">
                 <div class="animate__animated animate__heartBeat wow">ПОЧЕМУ МЫ?</div>
@@ -353,6 +361,23 @@ AnimateCssAsset::register($this);
                     </div>                 
                 <?php } ?>
                 <!-- Блок объявления. конец-->
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col">
+                <strong>Остались вопросы? Задайте их нашему специалисту!</strong>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-md-3 text-center mb-3">
+                <a href="<?= Url::to(['/site/letter']);  ?>">
+                    <button type="button" class="btn my-btn mb-1">
+                        <i class="fa fa-phone" aria-hidden="true" style="color: #ccc;"></i> 
+                        написать письмо</button>
+                </a> 
             </div>
         </div>
     </div>

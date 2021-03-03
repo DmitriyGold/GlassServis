@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Фев 16 2021 г., 10:08
+-- Время создания: Мар 02 2021 г., 09:44
 -- Версия сервера: 5.7.25
 -- Версия PHP: 7.1.32
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `t96463c4_mid`
+-- База данных: `glas574110_db`
 --
 
 -- --------------------------------------------------------
@@ -94,7 +94,8 @@ INSERT INTO `migration` (`version`, `apply_time`) VALUES
 ('m210111_064324_create_news_table', 1610348890),
 ('m210111_075414_create_promotions_table', 1610351740),
 ('m210111_110823_create_services_table', 1610363950),
-('m210203_141840_create_contact_table', 1612362231);
+('m210203_141840_create_contact_table', 1612362231),
+('m210301_070201_create_user_table', 1614585082);
 
 -- --------------------------------------------------------
 
@@ -180,6 +181,35 @@ INSERT INTO `services` (`id`, `sitePage`, `title`, `description`, `imagePath`, `
 (5, NULL, 'Сверление отверстий', '', '\\images\\main\\services\\66.jpg', '', '', '', '', '', '', 2, 0),
 (7, NULL, 'Резка стекла', 'происходит в автоматическом режиме на итальянском оборудовании фирмы Intermac', '\\images\\main\\services\\rezka.jpg', '', '', '', '', '', '', 2, 0);
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `auth_key` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `hide` int(1) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`, `email`, `phone`, `auth_key`, `date`, `hide`) VALUES
+(1, 'admin', '$2y$13$gjRjvH6aUZursq897KdTm.A.shErqbvZ7XotRHTFzvsAeZVOcniUO', 'ds_zolotov@mail.ru', '+79646321620', 't0AX5uW72ADeQXHOiwn3jk6sH71fOXwi', '2021-03-01', 0),
+(5, 'мой лого', '$2y$13$VI.z8aiWBobgD8NurmR5h.OSCAvubHAcw.88qADivHmJmBTdfJPLW', 'asd@mail.ru', '2342345432', '-iJNA7T9lrMkZtUa5O71Al06IGhzWf3F', NULL, 0),
+(6, 'admin2', '$2y$13$yh6SZEmgZm97JUh9MP1JeugNScVnmy3NfKrRvmZoQURxV1LWComne', '222@mail.ru', '8778787878', NULL, NULL, 0),
+(7, 'admin3', '$2y$13$eY/K/iwS3HDwp2jM9sDin.hS8nWPPimscrxqz0SRJoy67b5rDVPte', 'asd@mail.ru', '', NULL, NULL, 0),
+(8, 'admin4', '$2y$13$llJDLaumvU8Nb3RhzHtSKeZlKyqnSryFYVuQcCjlD6AruEJsALZou', 'asd@mail.ru', '', NULL, NULL, 0),
+(9, 'мой лого6', '$2y$13$lhc1mYkpdUjLrNTvvmm6UeiPq.srSPNHOM3cfwUjSlCwlT9MpPhkC', 'asd@mail.ru', '', NULL, NULL, 0);
+
 --
 -- Индексы сохранённых таблиц
 --
@@ -221,6 +251,12 @@ ALTER TABLE `services`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
@@ -252,6 +288,12 @@ ALTER TABLE `promotions`
 -- AUTO_INCREMENT для таблицы `services`
 --
 ALTER TABLE `services`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT для таблицы `user`
+--
+ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 

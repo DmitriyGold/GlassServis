@@ -5,13 +5,15 @@
 
 <div class="collapse navbar-collapse justify-content-<?= "$model1" ?> col-12 col-lg-<?= "$model2" ?>" id="navbarToggler1">
     <div class="navbar-nav text-center text-lg-right">
-        <a class="nav-item nav-link active" href="#">Главная</a>
-        <a class="nav-item nav-link" href="#">О компании</a>
-        <div class="dropdown">                                    
-            <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
-               aria-haspopup="true" aria-expanded="false">Услуги
+        <a class="nav-item nav-link active" href="<?= Url::to(['/site/index']); ?>"><i class="fa fa-home" aria-hidden="true" style="color: #999; font-size:24px;"></i></a>
+
+        <a class="nav-item nav-link  mx-2" href="<?= Url::to(['/site/about']); ?>">О компании</a>
+
+        <div class="mx-2">                                    
+            <a class="nav-item nav-link" data-toggle="dropdown" href="#" role="button" 
+               aria-haspopup="true" aria-expanded="false">Услуги 
             </a>
-            <div class="dropdown-menu">
+          <!--  <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Закалка стекла</a>
                 <a class="dropdown-item" href="#">Обработка кромки</a>
                 <a class="dropdown-item" href="#">Технологические вырезы</a>
@@ -19,10 +21,9 @@
                 <a class="dropdown-item" href="#">Резка стекла</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Доставка</a>
-            </div>
+            </div> -->
         </div>
-        <a class="nav-item nav-link" href="#">Вакансии</a>
-        <a class="nav-item nav-link" href="#">Контакты</a>
+        <a class="nav-item nav-link  mx-2" href="<?= Url::to(['/site/my_contact']); ?>">Контакты</a>
     </div>
 </div>
 </nav>

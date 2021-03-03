@@ -67,7 +67,7 @@ AppAsset::register($this);
                     </nav>
 
                     <div class="col-12 col-lg-2 text-center d-none">
-                        <a href="<?= Url::to(['/site/xxx']); ?>">
+                        <a href="<?= <?= Url::to(['/site/bell']); ?> ?>">
                             <button type="button" class="btn header-btn mb-1">
                                 <i class="fa fa-phone" aria-hidden="true" style="color: #ccc;"></i> 
                                 заказать звонок</button>
@@ -131,7 +131,7 @@ AppAsset::register($this);
                                         +7 964-632-1620
                                     </div>
                                     <div class="col col-lg-4">
-                                        <a href="<?= Url::to(['/site/xxx']); ?>">
+                                        <a href="<?= <?= Url::to(['/site/bell']); ?>?>">
                                             <button type="button" class="btn footer-btn mb-1">
                                                 <i class="fa fa-phone" aria-hidden="true" style="color: #ccc;"></i> 
                                                 заказать звонок</button>

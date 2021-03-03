@@ -167,7 +167,7 @@ $this->title = 'О нас';
             </div>
             <div class="row justify-content-center mt-4">
                 <div class="col-12 col-md-3 text-center mb-3">
-                    <a href="<?= Url::to(['#']); ?>">
+                    <a href="<?= Url::to(['/site/letter']); ?>">
                         <button type="button" class="btn my-btn mb-1">
                             <i class="fa fa-phone" aria-hidden="true" style="color: #ccc;"></i> 
                             написать письмо</button>

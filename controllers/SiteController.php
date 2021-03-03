@@ -4,18 +4,20 @@ namespace app\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
-use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
+use app\models\Signup;
 use app\models\ContactForm;
 use app\models\db\Main;
 use app\models\db\News;
 use app\models\db\Promotions;
 use app\models\db\Services;
 use app\models\db\Contact;
+use app\models\Letter;
+use app\models\Bell;
 
-class SiteController extends Controller {
+class SiteController extends AppController {
 
     /**
      * {@inheritdoc}
@@ -36,7 +38,9 @@ class SiteController extends Controller {
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['post'],
+                    'logout' => ['post', 'get'],
+                    'signup' => ['post', 'get'],
+                    'letter' => ['post', 'get'],
                 ],
             ],
         ];
@@ -101,8 +105,8 @@ class SiteController extends Controller {
                 ->where(['hide' => 0])
                 ->orderBy('sort')
                 ->asArray()
-                ->all();                     
-        
+                ->all();
+
         return $this->render('my_contact', [
                     'model' => $model,
         ]);
@@ -129,12 +133,31 @@ class SiteController extends Controller {
         ]);
     }
 
+    public function actionSignup() {
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new Signup;
+
+        if (isset($_POST['Signup'])) {
+            $model->attributes = Yii::$app->request->post('Signup'); // заполняем переменные модели (username, email...)
+
+            if ($model->validate() && $model->signup()) {
+                return $this->goHome();
+            }
+        }
+
+        return $this->render('signup', compact('model'));
+    }
+
     /**
      * Logout action.
      *
      * @return Response
      */
     public function actionLogout() {
+
         Yii::$app->user->logout();
 
         return $this->goHome();
@@ -164,6 +187,32 @@ class SiteController extends Controller {
      */
     public function actionAbout() {
         return $this->render('about');
+    }
+
+    public function actionLetter() {
+        $model = new Letter();
+        if (isset($_POST['Letter'])) {
+            $model->attributes = Yii::$app->request->post('Letter'); // заполняем переменные модели (username, email...)
+
+            if ($model->validate() && $model->mailout()) {
+                return $this->goHome();
+            }
+        }
+
+        return $this->render('letter', compact('model'));
+    }
+
+    public function actionBell() {
+        $model = new Bell();
+        if (isset($_POST['Bell'])) {
+            $model->attributes = Yii::$app->request->post('Bell'); // заполняем переменные модели (username, email...)
+
+            if ($model->validate() && $model->mailout()) {
+                return $this->goHome();
+            }
+        }
+
+        return $this->render('bell', compact('model'));
     }
 
 }
